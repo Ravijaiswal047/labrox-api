@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: labrox-test-catalog-service
+  profiles:
+    default: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/labrox_lims?currentSchema=catalog_schema
+    username: labrox_admin
+    password: LabRoxSecurePassword2026!
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    schemas: catalog_schema
+    baseline-on-migrate: true
