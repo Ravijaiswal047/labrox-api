@@ -1,0 +1,44 @@
+﻿openapi: 3.1.0
+info:
+  title: LabRox Specimen & Logistics Service API
+  version: 1.0.0
+  description: Phlebotomy specimen collection, barcode dispatch, courier manifest, and central accessioning.
+paths:
+  /samples/collect:
+    post:
+      summary: Mark specimen collected and record phlebotomy timestamp
+      operationId: collectSample
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [barcodeNo, collectorId]
+              properties:
+                barcodeNo:
+                  type: string
+                collectorId:
+                  type: integer
+      responses:
+        '200':
+          description: Specimen marked collected
+  /samples/accession:
+    post:
+      summary: Accession specimen tube into laboratory department
+      operationId: accessionSample
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [barcodeNo, departmentId]
+              properties:
+                barcodeNo:
+                  type: string
+                departmentId:
+                  type: integer
+      responses:
+        '200':
+          description: Specimen accessioned to department bench

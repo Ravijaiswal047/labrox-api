@@ -1,0 +1,111 @@
+﻿openapi: 3.1.0
+info:
+  title: LabRox Patient Registration & Order Service API
+  version: 1.0.0
+  description: Master patient index, laboratory test ordering, and billing settlement.
+servers:
+  - url: http://localhost:8080/api/v1/orders
+    description: API Gateway
+paths:
+  /patients:
+    get:
+      summary: Search patient registry by UHID, Mobile, or Name
+      operationId: searchPatients
+      parameters:
+        - name: query
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: List of matched patient demographics
+    post:
+      summary: Register new patient demographic profile
+      operationId: createPatient
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatientRegistrationRequest'
+      responses:
+        '201':
+          description: Patient successfully created with allocated UHID
+  /create-order:
+    post:
+      summary: Create new laboratory order and generate billing invoice
+      operationId: createOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderCreationRequest'
+      responses:
+        '201':
+          description: Order created; returns Lab No and barcode requirements
+components:
+  schemas:
+    PatientRegistrationRequest:
+      type: object
+      required: [firstName, gender, age, mobile]
+      properties:
+        title:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        gender:
+          type: string
+          enum: [Male, Female, Other]
+        age:
+          type: string
+        mobile:
+          type: string
+        email:
+          type: string
+        address:
+          type: string
+    OrderCreationRequest:
+      type: object
+      required: [patientId, centreId, rateTypeId, investigations, paymentSummary]
+      properties:
+        patientId:
+          type: integer
+        centreId:
+          type: integer
+        doctorId:
+          type: integer
+        rateTypeId:
+          type: integer
+        investigations:
+          type: array
+          items:
+            type: object
+            properties:
+              itemId:
+                type: integer
+              rate:
+                type: number
+              discount:
+                type: number
+        paymentSummary:
+          type: object
+          properties:
+            grossAmount:
+              type: number
+            discountAmount:
+              type: number
+            netAmount:
+              type: number
+            paidAmount:
+              type: number
+            paymentMode:
+              type: string

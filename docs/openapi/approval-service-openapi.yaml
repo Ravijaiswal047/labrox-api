@@ -1,0 +1,33 @@
+﻿openapi: 3.1.0
+info:
+  title: LabRox Clinical Verification & Approval Service API
+  version: 1.0.0
+  description: Pathologist multi-tier review, auto-validation, and 21 CFR Part 11 digital signature sealing.
+paths:
+  /approvals/pending:
+    get:
+      summary: Retrieve completed orders pending pathologist sign-off
+      responses:
+        '200':
+          description: List of pending review items with critical flags
+  /approvals/sign-off:
+    post:
+      summary: Authorize test panel with digital signature ceremony
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [testId, pin, signReason]
+              properties:
+                testId:
+                  type: integer
+                pin:
+                  type: string
+                  format: password
+                signReason:
+                  type: string
+      responses:
+        '200':
+          description: Test approved and queued for document sealing

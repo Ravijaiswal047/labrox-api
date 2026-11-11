@@ -1,0 +1,47 @@
+﻿openapi: 3.1.0
+info:
+  title: LabRox Diagnostic Results & Modalities Service API
+  version: 1.0.0
+  description: Clinical result entry, formula evaluation, delta check variance, and microbiology AST.
+paths:
+  /results/worklist:
+    get:
+      summary: Retrieve pending test worklist for bench
+      parameters:
+        - name: departmentId
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: cursor
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Paginated bench worklist with reference ranges
+  /results/enter:
+    post:
+      summary: Submit batch parameter observations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [testId, observations]
+              properties:
+                testId:
+                  type: integer
+                observations:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      observationId:
+                        type: integer
+                      value:
+                        type: string
+      responses:
+        '200':
+          description: Results saved and evaluated against reference ranges
