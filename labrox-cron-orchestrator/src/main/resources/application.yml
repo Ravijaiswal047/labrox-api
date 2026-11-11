@@ -1,0 +1,32 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: labrox-cron-orchestrator
+  profiles:
+    default: dev
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:labrox_lims}?currentSchema=cron_schema
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: cron_schema
+        format_sql: false
+  flyway:
+    enabled: true
+    schemas: cron_schema
+    locations: classpath:db/migration
+  quartz:
+    job-store-type: memory
+    properties:
+      org.quartz.threadPool.threadCount: 10
+      org.quartz.scheduler.instanceName: LabRoxClusteredScheduler
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
