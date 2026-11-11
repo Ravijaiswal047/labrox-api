@@ -1,0 +1,76 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: labrox-gateway-service
+  cloud:
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+            maxAge: 3600
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials Access-Control-Allow-Methods Access-Control-Allow-Headers Vary, RETAIN_FIRST
+      routes:
+        # 1. IAM, Login, Menus, Centers, Employees, Common Dropdowns, CompanyMaster, ManageFieldMaster -> labrox-iam-service (8081)
+        - id: iam-routes
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/v1/Login/**, /api/v1/login/**, /api/v1/Menu/**, /api/v1/menu/**, /api/v1/Centre/**, /api/v1/centre/**, /api/v1/Employee/**, /api/v1/employee/**, /api/v1/DoctorReferal/**, /api/v1/doctorReferal/**, /api/v1/Global/**, /api/v1/global/**, /api/v1/TestData/**, /api/v1/testData/**, /api/v1/CommonController/**, /api/v1/commonController/**, /api/v1/CommonAPI/**, /api/v1/commonAPI/**, /api/v1/CommonHC/**, /api/v1/commonHC/**, /api/v1/CompanyMaster/**, /api/v1/companymaster/**, /api/v1/ManageFieldMaster/**, /api/v1/managefieldmaster/**, /api/v1/Booking/**, /api/v1/booking/**, /api/v1/CouponMaster/**, /api/v1/couponMaster/**, /api/v1/ConcentFormMaster/**, /api/v1/concentFormMaster/**, /api/v1/PndtFormMaster/**, /api/v1/pndtFormMaster/**, /api/v1/PreRegistration/**, /api/v1/preRegistration/**, /api/v1/DiscApproval/**, /api/v1/discApproval/**, /api/v1/MachineGroup/**, /api/v1/machineGroup/**, /api/v1/LanguageMaster/**, /api/v1/languageMaster/**, /api/v1/Designation/**, /api/v1/designation/**, /api/v1/Accounts/**, /api/v1/accounts/**, /api/v1/ReferalLab/**, /api/v1/referalLab/**, /api/v1/FieldBoyMaster/**, /api/v1/fieldBoyMaster/**, /api/v1/RazorPay/**, /api/v1/razorPay/**, /api/v1/Department/**, /api/v1/department/**, /api/v1/HistoCyto/**, /api/v1/histoCyto/**, /api/v1/Lab/**, /api/v1/lab/**, /api/v1/BuildingBlock/**, /api/v1/buildingBlock/**, /api/v1/DignosticMaster/**, /api/v1/dignosticMaster/**, /api/v1/Investigations/**, /api/v1/investigations/**, /api/v1/iam/**
+
+        # 2. Patient Registration, Work Orders, Cashier Billing POS -> labrox-order-service (8089)
+        - id: order-routes
+          uri: http://localhost:8089
+          predicates:
+            - Path=/api/v1/PatientRegistration/**, /api/v1/patientRegistration/**, /api/v1/WorkSheetOrder/**, /api/v1/workSheetOrder/**, /api/v1/BarcodeQueue/**, /api/v1/barcodeQueue/**, /api/v1/ReceiptReprint/**, /api/v1/receiptReprint/**, /api/v1/orders/**
+
+        # 3. Phlebotomy Sample Collection & Accessioning -> labrox-sample-service (8083)
+        - id: sample-routes
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/v1/SC/**, /api/v1/sc/**, /api/v1/SampleType/**, /api/v1/sampleType/**, /api/v1/SampleReceiveBarcode/**, /api/v1/sampleReceiveBarcode/**, /api/v1/DepartmentReceive/**, /api/v1/departmentReceive/**, /api/v1/SRA/**, /api/v1/sra/**, /api/v1/samples/**
+
+        # 4. Diagnostic Result Entry & Delta Checks -> labrox-diagnostic-service (8084)
+        - id: diagnostic-routes
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/v1/RE/**, /api/v1/re/**, /api/v1/InvestigationCommentMaster/**, /api/v1/investigationCommentMaster/**, /api/v1/diagnostic/**
+
+        # 5. Medical Doctor Approval & Electronic Signatures -> labrox-approval-service (8086)
+        - id: approval-routes
+          uri: http://localhost:8086
+          predicates:
+            - Path=/api/v1/ChangeResultStatus/**, /api/v1/changeResultStatus/**, /api/v1/DoctorApproval/**, /api/v1/doctorApproval/**, /api/v1/approval/**
+
+        # 6. Clinical PDF Reports & Cashier Receipts -> labrox-reporting-service (8091)
+        - id: reporting-routes
+          uri: http://localhost:8091
+          predicates:
+            - Path=/api/v1/Reports/**, /api/v1/reports/**, /api/v1/commonReports/**, /reports/**, /api/v1/Dispatch/**, /api/v1/dispatch/**, /api/v1/reporting/**
+
+        # 7. Investigations Master Catalog & Price Lists -> labrox-test-catalog-service (8082)
+        - id: catalog-routes
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/v1/Investigations/**, /api/v1/investigations/**, /api/v1/RateList/**, /api/v1/rateList/**, /api/v1/catalog/**
+
+        # 8. QC, Westgard & Levey-Jennings -> labrox-qc-service (8085)
+        - id: qc-routes
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/v1/QC/**, /api/v1/qc/**, /api/v1/QCValueEntry/**, /api/v1/IQCWestgardRuleMaster/**, /api/v1/QCRemarksMaster/**, /api/v1/QCMISReport/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
