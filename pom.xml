@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Spring Ecosystem (Latest Stable / LTS) -->
-        <spring-boot.version>3.3.4</spring-boot.version>
+        <spring-boot.version>4.1.2</spring-boot.version>
         <spring-cloud.version>2023.0.3</spring-cloud.version>
 
         <!-- Data & Messaging -->
