@@ -24,8 +24,26 @@ public class ClinicalSampleStore {
     public static final Map<Integer, Map<String, Object>> WORK_ORDERS = new ConcurrentHashMap<>();
     public static final Map<Integer, List<Map<String, Object>>> INVESTIGATIONS = new ConcurrentHashMap<>();
     public static final Set<String> SRA_SORTED_BARCODES = Collections.synchronizedSet(new HashSet<>());
+    public static final List<Map<String, Object>> AUDIT_LOG = Collections.synchronizedList(new ArrayList<>());
     private static final AtomicInteger LEDGER_SEQ = new AtomicInteger(10);
     private static final AtomicInteger TEST_SEQ = new AtomicInteger(500);
+
+    public static synchronized void recordAudit(String action, String barcode, String details, String user, boolean success) {
+        Map<String, Object> entry = new LinkedHashMap<>();
+        String now = LocalDateTime.now().format(DT_ENTRY_FMT);
+        entry.put("timestamp", now);
+        entry.put("action", action);
+        entry.put("barcode", barcode != null ? barcode : "");
+        entry.put("details", details != null ? details : "");
+        entry.put("user", user != null ? user : "SYSTEM");
+        entry.put("success", success);
+        AUDIT_LOG.add(entry);
+        if (success) {
+            log.info("[AUDIT 21-CFR-11] Action: {}, Barcode: {}, User: {}, Details: {}", action, barcode, user, details);
+        } else {
+            log.warn("[AUDIT VIOLATION 21-CFR-11] Action: {}, Barcode: {}, User: {}, Details: {}", action, barcode, user, details);
+        }
+    }
 
     static {
         resetInitialData();
@@ -35,6 +53,7 @@ public class ClinicalSampleStore {
         WORK_ORDERS.clear();
         INVESTIGATIONS.clear();
         SRA_SORTED_BARCODES.clear();
+        AUDIT_LOG.clear();
 
         LocalDateTime now = LocalDateTime.now();
         String dtEntry = now.format(DT_ENTRY_FMT);
@@ -63,6 +82,11 @@ public class ClinicalSampleStore {
         wo1.put("PreSampleCollectionDate", dateStr);
         wo1.put("Status", 1); // 1 = Not Collected
         wo1.put("IsSampleCollected", "N");
+        wo1.put("is_sra", 0);
+        wo1.put("sra_status", "PENDING");
+        wo1.put("sra_category", "");
+        wo1.put("sra_operator", "");
+        wo1.put("sra_completed_at", "");
         wo1.put("SinNo", "");
         wo1.put("SINNo", "");
         wo1.put("BarcodeNo", "");
@@ -122,6 +146,11 @@ public class ClinicalSampleStore {
         wo2.put("PreSampleCollectionDate", dateStr);
         wo2.put("Status", 2); // 2 = Collected
         wo2.put("IsSampleCollected", "Y");
+        wo2.put("is_sra", 0);
+        wo2.put("sra_status", "PENDING");
+        wo2.put("sra_category", "");
+        wo2.put("sra_operator", "");
+        wo2.put("sra_completed_at", "");
         wo2.put("SinNo", "BC20261105001");
         wo2.put("SINNo", "BC20261105001");
         wo2.put("BarcodeNo", "BC20261105001");
@@ -174,6 +203,12 @@ public class ClinicalSampleStore {
         wo3.put("PreSampleCollectionDate", dateStr);
         wo3.put("Status", 3); // 3 = Department Received
         wo3.put("IsSampleCollected", "Y");
+        wo3.put("is_sra", 1);
+        wo3.put("sra_status", "SRA_COMPLETED");
+        wo3.put("sra_category", "In-House");
+        wo3.put("sra_operator", "Lab Tech (SRA)");
+        wo3.put("sra_completed_at", dateStr);
+        SRA_SORTED_BARCODES.add("BC20261105002");
         wo3.put("SinNo", "BC20261105002");
         wo3.put("SINNo", "BC20261105002");
         wo3.put("BarcodeNo", "BC20261105002");
@@ -197,6 +232,11 @@ public class ClinicalSampleStore {
                 2, "Serum Creatinine", 2, "Biochemistry", 2, "Serum",
                 "BC20261105002", 3, "Y", dateStr, dtEntry, "#008000"
         );
+        item3_1.put("is_sra", 1);
+        item3_1.put("sra_status", "SRA_COMPLETED");
+        item3_1.put("sra_category", "In-House");
+        item3_1.put("sra_operator", "Lab Tech (SRA)");
+        item3_1.put("sra_completed_at", dateStr);
         items3.add(item3_1);
 
         INVESTIGATIONS.put(3, items3);
@@ -387,6 +427,12 @@ public class ClinicalSampleStore {
         item.put("TestIdhash", "hash" + testId);
         item.put("isSelected", false);
         item.put("isSampleReCollection", 0);
+        item.put("is_sra", 0);
+        item.put("sra_status", "PENDING");
+        item.put("sra_operator", "");
+        item.put("sra_completed_at", "");
+        item.put("sra_category", "");
+        item.put("Segregation", 0);
         return item;
     }
 
@@ -413,6 +459,12 @@ public class ClinicalSampleStore {
                 pli.put("SINNo", item.get("SINNo"));
                 pli.put("SinNo", item.get("SinNo"));
                 pli.put("BarcodeLogic", item.get("BarcodeLogic"));
+                pli.put("is_sra", item.get("is_sra"));
+                pli.put("sra_status", item.get("sra_status"));
+                pli.put("sra_category", item.get("sra_category"));
+                pli.put("sra_completed_at", item.get("sra_completed_at"));
+                pli.put("sra_operator", item.get("sra_operator"));
+                pli.put("Segregation", item.get("Segregation"));
                 pli.put("SampleInTransit", 0);
                 pliList.add(pli);
             }
@@ -540,6 +592,11 @@ public class ClinicalSampleStore {
                         if (testId == 0 || Objects.equals(inv.get("TestID"), testId)) {
                             inv.put("Status", 2); // Status 2 = Sample Collected
                             inv.put("IsSampleCollected", "Y");
+                            inv.put("is_sra", 0);
+                            inv.put("sra_status", "PENDING");
+                            inv.put("sra_category", "");
+                            inv.put("sra_operator", "");
+                            inv.put("sra_completed_at", "");
                             inv.put("PreSampleCollectionDate", nowStr);
                             inv.put("Date", nowStr);
                             inv.put("dtEntry", dtEntry);
@@ -561,6 +618,11 @@ public class ClinicalSampleStore {
         if (wo != null) {
             wo.put("Status", 2);
             wo.put("IsSampleCollected", "Y");
+            wo.put("is_sra", 0);
+            wo.put("sra_status", "PENDING");
+            wo.put("sra_category", "");
+            wo.put("sra_operator", "");
+            wo.put("sra_completed_at", "");
             wo.put("PreSampleCollectionDate", nowStr);
             if (!primaryBarcode.isEmpty()) {
                 wo.put("SinNo", primaryBarcode);
@@ -572,6 +634,10 @@ public class ClinicalSampleStore {
                 updatePliDataList(wo, currentItems);
             }
         }
+
+        recordAudit("SAMPLE_COLLECTED", primaryBarcode, "Sample successfully collected at phlebotomy", "Phlebotomist", true);
+
+        recordAudit("DEPARTMENT_RECEIVED", "Batch", "Department Sample Received Successfully", "Lab Technician", true);
 
         Map<String, Object> ok = new HashMap<>();
         ok.put("status", true);
@@ -771,6 +837,20 @@ public class ClinicalSampleStore {
                     continue;
                 }
 
+                // SRA GATE ENFORCEMENT (Defect 1):
+                // In Department Receive, any sample with Status 2 (Collected) MUST have completed SRA (is_sra == 1).
+                // Samples that have not completed SRA are strictly excluded from Department Receive.
+                Object isSraObj = test.get("is_sra");
+                boolean isSraCompleted = isSraObj != null && (
+                        Objects.equals(isSraObj, 1) ||
+                        Objects.equals(isSraObj, "1") ||
+                        "SRA_COMPLETED".equalsIgnoreCase(String.valueOf(test.get("sra_status")))
+                );
+
+                if (status == 2 && !isSraCompleted) {
+                    continue; // Exclude non-SRA samples from Department Receive list
+                }
+
                 // Filter by SelectTypes & ItemValue if provided
                 if (!itemValue.isEmpty()) {
                     if ("BarcodeNo".equalsIgnoreCase(selectTypes)) {
@@ -812,6 +892,11 @@ public class ClinicalSampleStore {
                 copy.put("BarcodeNo", test.get("BarcodeNo") != null ? test.get("BarcodeNo") : test.get("SinNo"));
                 copy.put("SampleName", test.get("SampleTypeName") != null ? test.get("SampleTypeName") : test.get("SampleType"));
                 copy.put("SampleTypeName", test.get("SampleTypeName") != null ? test.get("SampleTypeName") : test.get("SampleType"));
+                copy.put("is_sra", isSraCompleted ? 1 : 0);
+                copy.put("sra_status", test.getOrDefault("sra_status", isSraCompleted ? "SRA_COMPLETED" : "PENDING"));
+                copy.put("sra_category", test.getOrDefault("sra_category", "In-House"));
+                copy.put("sra_operator", test.getOrDefault("sra_operator", ""));
+                copy.put("sra_completed_at", test.getOrDefault("sra_completed_at", ""));
                 copy.put("IsChecked", 0);
                 copy.put("isReject", 0);
                 filteredTests.add(copy);
@@ -887,6 +972,48 @@ public class ClinicalSampleStore {
             return err;
         }
 
+        // SRA GATE VALIDATION (Defect 1):
+        // Department Receive MUST NOT accept or process any sample until its SRA step is complete.
+        for (Object obj : rawData) {
+            if (obj instanceof Map<?, ?> item) {
+                Object testIdObj = item.get("TestID");
+                Object ledgerIdObj = item.get("LedgerTransactionID");
+
+                int targetLedgerId = 1;
+                if (ledgerIdObj != null) {
+                    try { targetLedgerId = Integer.parseInt(ledgerIdObj.toString().trim()); } catch (NumberFormatException ignored) {}
+                }
+                int testId = 0;
+                if (testIdObj != null) {
+                    try { testId = Integer.parseInt(testIdObj.toString().trim()); } catch (NumberFormatException ignored) {}
+                }
+
+                List<Map<String, Object>> invList = INVESTIGATIONS.get(targetLedgerId);
+                if (invList != null) {
+                    for (Map<String, Object> inv : invList) {
+                        if (testId == 0 || Objects.equals(inv.get("TestID"), testId)) {
+                            Object isSraObj = inv.get("is_sra");
+                            boolean isSraCompleted = isSraObj != null && (
+                                    Objects.equals(isSraObj, 1) ||
+                                    Objects.equals(isSraObj, "1") ||
+                                    "SRA_COMPLETED".equalsIgnoreCase(String.valueOf(inv.get("sra_status")))
+                            );
+                            if (!isSraCompleted) {
+                                String bc = inv.get("BarcodeNo") != null ? inv.get("BarcodeNo").toString() : "";
+                                recordAudit("ILLEGAL_TRANSITION_REJECTED", bc, "Sample must complete SRA before Department Receive.", "API/User", false);
+                                Map<String, Object> err = new HashMap<>();
+                                err.put("status", false);
+                                err.put("success", false);
+                                err.put("statusCode", 409);
+                                err.put("message", "Sample must complete SRA before Department Receive.");
+                                return err;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         String nowStr = LocalDateTime.now().format(DISPLAY_FMT);
         String dtEntry = LocalDateTime.now().format(DT_ENTRY_FMT);
 
@@ -932,6 +1059,8 @@ public class ClinicalSampleStore {
                 }
             }
         }
+
+        recordAudit("DEPARTMENT_RECEIVED", "Batch", "Department Sample Received Successfully", "Lab Technician", true);
 
         Map<String, Object> ok = new HashMap<>();
         ok.put("status", true);
@@ -992,6 +1121,26 @@ public class ClinicalSampleStore {
             return err;
         }
 
+        // SRA GATE VALIDATION (Defect 1):
+        // Department Receive MUST NOT accept or process any sample until its SRA step is complete.
+        for (Map<String, Object> test : matchingTests) {
+            Object isSraObj = test.get("is_sra");
+            boolean isSraCompleted = isSraObj != null && (
+                    Objects.equals(isSraObj, 1) ||
+                    Objects.equals(isSraObj, "1") ||
+                    "SRA_COMPLETED".equalsIgnoreCase(String.valueOf(test.get("sra_status")))
+            );
+            if (!isSraCompleted) {
+                recordAudit("ILLEGAL_TRANSITION_REJECTED", cleanBarcode, "Sample must complete SRA before Department Receive.", "API/User", false);
+                Map<String, Object> err = new HashMap<>();
+                err.put("status", false);
+                err.put("success", false);
+                err.put("statusCode", 409);
+                err.put("message", "Sample must complete SRA before Department Receive.");
+                return err;
+            }
+        }
+
         List<Map<String, Object>> receivedList = new ArrayList<>();
         String nowStr = LocalDateTime.now().format(DISPLAY_FMT);
 
@@ -1015,6 +1164,8 @@ public class ClinicalSampleStore {
                 } catch (NumberFormatException ignored) {}
             }
         }
+
+        recordAudit("DEPARTMENT_RECEIVED", cleanBarcode, "Barcode Received Successfully in Department", "Lab Technician", true);
 
         Map<String, Object> response = new HashMap<>();
         response.put("status", true);
@@ -1247,12 +1398,30 @@ public class ClinicalSampleStore {
 
     public static synchronized List<Map<String, Object>> getSraPendingData(Map<String, Object> request) {
         List<Map<String, Object>> rows = new ArrayList<>();
+        Object typeObj = request != null ? request.get("Type") : null;
+        String typeStr = typeObj != null ? typeObj.toString().trim() : "1";
+
         for (List<Map<String, Object>> items : INVESTIGATIONS.values()) {
             for (Map<String, Object> test : items) {
                 int status = Integer.parseInt(test.get("Status").toString());
                 // SRA Pending view: Only collected samples (Status 2).
                 // Status 1 (Not Collected) and Status 4 (Rejected) are STRICTLY excluded.
                 if (status != 2) {
+                    continue;
+                }
+
+                Object isSraObj = test.get("is_sra");
+                boolean isSraCompleted = isSraObj != null && (
+                        Objects.equals(isSraObj, 1) ||
+                        Objects.equals(isSraObj, "1") ||
+                        "SRA_COMPLETED".equalsIgnoreCase(String.valueOf(test.get("sra_status")))
+                );
+
+                // Type "1": SRA Pending All (only samples that have NOT yet completed SRA)
+                // Type "2": Dept Receive Pending (only samples that HAVE completed SRA)
+                if ("1".equals(typeStr) && isSraCompleted) {
+                    continue;
+                } else if ("2".equals(typeStr) && !isSraCompleted) {
                     continue;
                 }
 
@@ -1292,7 +1461,17 @@ public class ClinicalSampleStore {
                 row.put("TimeDiffe1", 10);
                 row.put("IsSampleCollected", "Y");
                 row.put("isSampleCollected", "Y");
-                row.put("Segregation", 0);
+                int segregationVal = 0;
+                if (test.get("Segregation") != null) {
+                    try { segregationVal = Integer.parseInt(test.get("Segregation").toString().trim()); } catch (NumberFormatException ignored) {}
+                }
+                row.put("Segregation", segregationVal);
+                row.put("is_sra", isSraCompleted ? 1 : 0);
+                row.put("sra_status", test.getOrDefault("sra_status", isSraCompleted ? "SRA_COMPLETED" : "PENDING"));
+                row.put("sra_category", test.getOrDefault("sra_category", segregationVal == 1 ? "Segregation" : "In-House"));
+                row.put("sra_completed_at", test.getOrDefault("sra_completed_at", ""));
+                row.put("sra_operator", test.getOrDefault("sra_operator", ""));
+                row.put("Status", status);
                 rows.add(row);
             }
         }
@@ -1311,6 +1490,7 @@ public class ClinicalSampleStore {
 
         // Check if barcode has already been sorted in SRA
         if (SRA_SORTED_BARCODES.contains(cleanBarcode.toUpperCase())) {
+            recordAudit("SRA_DUPLICATE_SORT_ATTEMPT", cleanBarcode, "Barcode already sorted in SRA", "Lab Tech (SRA)", false);
             response.put("status", false);
             response.put("success", false);
             response.put("message", "This Barcode already sort");
@@ -1320,6 +1500,7 @@ public class ClinicalSampleStore {
         List<Map<String, Object>> result = new ArrayList<>();
         boolean found = false;
         boolean collected = false;
+        String nowStr = LocalDateTime.now().format(DISPLAY_FMT);
 
         for (List<Map<String, Object>> items : INVESTIGATIONS.values()) {
             for (Map<String, Object> test : items) {
@@ -1336,6 +1517,34 @@ public class ClinicalSampleStore {
                     if (status >= 2) {
                         collected = true;
                     }
+
+                    int segregationVal = 0;
+                    if (test.get("Segregation") != null) {
+                        try { segregationVal = Integer.parseInt(test.get("Segregation").toString().trim()); } catch (NumberFormatException ignored) {}
+                    }
+                    String category = (segregationVal == 1 || segregationVal == 2) ? "Segregation" : "In-House";
+
+                    test.put("is_sra", 1);
+                    test.put("sra_status", "SRA_COMPLETED");
+                    test.put("sra_completed_at", nowStr);
+                    test.put("sra_operator", "Lab Tech (SRA)");
+                    test.put("sra_category", category);
+
+                    Object ledgerIdObj = test.get("LedgerTransactionID");
+                    if (ledgerIdObj != null) {
+                        try {
+                            int lId = Integer.parseInt(ledgerIdObj.toString().trim());
+                            Map<String, Object> wo = WORK_ORDERS.get(lId);
+                            if (wo != null) {
+                                wo.put("is_sra", 1);
+                                wo.put("sra_status", "SRA_COMPLETED");
+                                wo.put("sra_completed_at", nowStr);
+                                wo.put("sra_operator", "Lab Tech (SRA)");
+                                wo.put("sra_category", category);
+                            }
+                        } catch (NumberFormatException ignored) {}
+                    }
+
                     Map<String, Object> row = new LinkedHashMap<>();
                     row.put("Centre", test.getOrDefault("CentreName", "Main Reference Lab"));
                     row.put("Location", test.getOrDefault("CentreName", "Main Reference Lab"));
@@ -1361,7 +1570,13 @@ public class ClinicalSampleStore {
                     row.put("TestID", test.get("TestID"));
                     row.put("TimeDiffe1", 10);
                     row.put("IsSampleCollected", "Y");
-                    row.put("Segregation", 0); // 0 = In-house
+                    row.put("Segregation", segregationVal);
+                    row.put("is_sra", 1);
+                    row.put("sra_status", "SRA_COMPLETED");
+                    row.put("sra_completed_at", nowStr);
+                    row.put("sra_operator", "Lab Tech (SRA)");
+                    row.put("sra_category", category);
+                    row.put("Status", test.get("Status"));
                     result.add(row);
                 }
             }
@@ -1375,6 +1590,7 @@ public class ClinicalSampleStore {
         }
 
         if (!collected) {
+            recordAudit("SRA_UNCOLLECTED_SORT_ATTEMPT", cleanBarcode, "Attempted SRA sorting before sample collection", "Lab Tech (SRA)", false);
             response.put("status", false);
             response.put("success", false);
             response.put("message", "Sample not collected yet. Please collect sample first.");
@@ -1383,6 +1599,9 @@ public class ClinicalSampleStore {
 
         // Successfully sorted! Track barcode so re-sort attempt will fail with "This Barcode already sort"
         SRA_SORTED_BARCODES.add(cleanBarcode.toUpperCase());
+        String cat = result.isEmpty() ? "In-House" : String.valueOf(result.get(0).getOrDefault("sra_category", "In-House"));
+        recordAudit("SRA_COMPLETED", cleanBarcode, "Sample successfully sorted into " + cat, "Lab Tech (SRA)", true);
+
         response.put("status", true);
         response.put("success", true);
         response.put("message", result);

@@ -32,6 +32,10 @@ public class LegacyDepartmentReceiveController {
         log.info("Legacy DepartmentReceive SampleReceiveBarcode: {}", request);
         String barcode = request != null && request.get("BarcodeNo") != null ? request.get("BarcodeNo").toString().trim() : "";
         Map<String, Object> response = ClinicalSampleStore.receiveBarcode(barcode);
+        if (Integer.valueOf(409).equals(response.get("statusCode")) ||
+                (Boolean.FALSE.equals(response.get("status")) && response.get("message") != null && response.get("message").toString().contains("SRA"))) {
+            return ResponseEntity.status(409).body(response);
+        }
         return ResponseEntity.ok(response);
     }
 
@@ -46,7 +50,17 @@ public class LegacyDepartmentReceiveController {
         }
 
         Map<String, Object> response = ClinicalSampleStore.receiveDepartment(rawData);
+        if (Integer.valueOf(409).equals(response.get("statusCode")) ||
+                (Boolean.FALSE.equals(response.get("status")) && response.get("message") != null && response.get("message").toString().contains("SRA"))) {
+            return ResponseEntity.status(409).body(response);
+        }
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping({"/AuditTrail", "/auditTrail"})
+    @Operation(summary = "Retrieve 21 CFR Part 11 sample audit trail")
+    public ResponseEntity<List<Map<String, Object>>> getAuditTrail() {
+        return ResponseEntity.ok(ClinicalSampleStore.AUDIT_LOG);
     }
 
     @PostMapping({"/SaveTransferData", "/saveTransferData"})
