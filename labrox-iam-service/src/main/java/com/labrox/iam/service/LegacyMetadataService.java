@@ -129,7 +129,17 @@ public class LegacyMetadataService {
             return Collections.emptyList();
         }
         List<Map<String, Object>> list = pageControlsByPageId.get(pageId.trim());
-        if (list == null) {
+        if (list == null || list.isEmpty()) {
+            if ("1081".equals(pageId.trim())) {
+                List<Map<String, Object>> defaults = new ArrayList<>();
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Doctor", "ControlName", "Doctor", "IsShow", 1, "DisplayOrder", 1));
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Save", "ControlName", "Save", "IsShow", 1, "DisplayOrder", 2));
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Approve", "ControlName", "Approve", "IsShow", 1, "DisplayOrder", 3));
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Machine Group", "ControlName", "Machine Group", "IsShow", 1, "DisplayOrder", 4));
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Preview", "ControlName", "Preview", "IsShow", 1, "DisplayOrder", 5));
+                defaults.add(Map.of("PageID", 1081, "ControlDisplayID", "Main List", "ControlName", "Main List", "IsShow", 1, "DisplayOrder", 6));
+                return defaults;
+            }
             return Collections.emptyList();
         }
         return new ArrayList<>(list);

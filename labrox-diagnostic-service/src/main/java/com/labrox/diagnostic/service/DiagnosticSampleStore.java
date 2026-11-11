@@ -537,6 +537,7 @@ public class DiagnosticSampleStore {
         m.put("IsCritical", 0);
         m.put("MinFlag", 0);
         m.put("MaxFlag", 0);
+        m.put("Status", TEST_STATUS_MAP.getOrDefault(testId, 3));
         m.put("PrintOrder", order);
         m.put("IsBold", 0);
         m.put("IsUnderline", 0);

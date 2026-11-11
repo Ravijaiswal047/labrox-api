@@ -48,7 +48,62 @@ public class LegacyREController {
     @PostMapping("/SaveResultEntry")
     @Operation(summary = "Save analyte observation readings and mark test tested or approved")
     public ResponseEntity<Map<String, Object>> saveResultEntry(@RequestBody(required = false) Object request) {
-        log.info("Legacy RE SaveResultEntry saved: {}", request);
+        log.info("Legacy RE SaveResultEntry called with: {}", request);
+
+        // Extract and validate doctorId / ApprovedBy
+        String doctorId = null;
+        if (request instanceof Map<?, ?> map) {
+            if (map.get("doctorId") != null) {
+                doctorId = String.valueOf(map.get("doctorId")).trim();
+            } else if (map.get("ApprovedBy") != null) {
+                doctorId = String.valueOf(map.get("ApprovedBy")).trim();
+            }
+
+            // Check HeaderInfo list
+            if ((doctorId == null || doctorId.isEmpty() || "0".equals(doctorId) || "null".equalsIgnoreCase(doctorId)) && map.get("HeaderInfo") instanceof List<?> headers) {
+                for (Object h : headers) {
+                    if (h instanceof Map<?, ?> hMap) {
+                        Object doc = hMap.get("ApprovedBy") != null ? hMap.get("ApprovedBy") : hMap.get("doctorId");
+                        if (doc != null && !String.valueOf(doc).trim().isEmpty() && !"0".equals(String.valueOf(doc).trim()) && !"null".equalsIgnoreCase(String.valueOf(doc).trim())) {
+                            doctorId = String.valueOf(doc).trim();
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Check data rows
+            if ((doctorId == null || doctorId.isEmpty() || "0".equals(doctorId) || "null".equalsIgnoreCase(doctorId)) && map.get("data") instanceof List<?> dataRows) {
+                for (Object r : dataRows) {
+                    if (r instanceof Map<?, ?> rMap) {
+                        Object doc = rMap.get("ApprovedBy") != null ? rMap.get("ApprovedBy") : rMap.get("doctorId");
+                        if (doc != null && !String.valueOf(doc).trim().isEmpty() && !"0".equals(String.valueOf(doc).trim()) && !"null".equalsIgnoreCase(String.valueOf(doc).trim())) {
+                            doctorId = String.valueOf(doc).trim();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Strict Server-Side Validation: Reject when Doctor is missing
+        if (doctorId == null || doctorId.isEmpty() || "0".equals(doctorId) || "null".equalsIgnoreCase(doctorId) || "undefined".equalsIgnoreCase(doctorId)) {
+            String correlationId = "CORR-RE-VAL-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+            log.warn("[21 CFR Part 11 AUDIT] SaveResultEntry REJECTED - Missing mandatory doctor selection. correlationId={}, request={}",
+                    correlationId, request);
+
+            Map<String, Object> errorResp = new LinkedHashMap<>();
+            errorResp.put("status", false);
+            errorResp.put("success", false);
+            errorResp.put("statusCode", 400);
+            errorResp.put("correlationId", correlationId);
+            errorResp.put("message", "Doctor selection is mandatory. Please select a Doctor before saving.");
+            errorResp.put("fieldErrors", Map.of("doctorId", "Doctor selection is mandatory. Please select a Doctor before saving."));
+            return ResponseEntity.badRequest().body(errorResp);
+        }
+
+        String correlationId = "CORR-RE-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        log.info("[21 CFR Part 11 AUDIT] SaveResultEntry ACCEPTED - doctorId={}, correlationId={}", doctorId, correlationId);
         DiagnosticSampleStore.saveResultEntry(request);
 
         String msg = "Result Entry Saved Successfully";
@@ -56,10 +111,19 @@ public class LegacyREController {
             msg = "Results Approved Successfully";
         }
 
-        Map<String, Object> response = new HashMap<>();
+        Map<String, Object> response = new LinkedHashMap<>();
         response.put("status", true);
         response.put("success", true);
+        response.put("statusCode", 200);
+        response.put("correlationId", correlationId);
+        response.put("doctorId", doctorId);
         response.put("message", msg);
+        response.put("data", Map.of(
+                "doctorId", doctorId,
+                "status", msg,
+                "correlationId", correlationId,
+                "savedAt", java.time.LocalDateTime.now().toString()
+        ));
         return ResponseEntity.ok(response);
     }
 

@@ -259,7 +259,7 @@ public class LegacyCommonController {
     @Operation(summary = "Bind approval doctors for verification")
     public ResponseEntity<Map<String, Object>> bindApprovalDoctor(@RequestBody(required = false) Map<String, Object> body) {
         List<Map<String, Object>> doctors = List.of(
-            Map.of("employeeid", 1, "name", "Dr. Ravi Kumar (MBBS, MD)", "IsDefault", 1, "value", 1, "label", "Dr. Ravi Kumar (MBBS, MD)"),
+            Map.of("employeeid", 1, "name", "Dr. Ravi Kumar (MBBS, MD)", "IsDefault", 0, "value", 1, "label", "Dr. Ravi Kumar (MBBS, MD)"),
             Map.of("employeeid", 2, "name", "Dr. Sunita Rao (Pathologist)", "IsDefault", 0, "value", 2, "label", "Dr. Sunita Rao (Pathologist)")
         );
         Map<String, Object> response = new HashMap<>();

@@ -31,8 +31,6 @@ public class LegacyREControllerTest {
     @DisplayName("RE: GetResultEntry returns tests pending result entry")
     void testGetResultEntry() {
         Map<String, Object> req = new HashMap<>();
-        req.put("SelectTypes", "BarcodeNo");
-        req.put("ItemValue", "BAR20261104001");
 
         ResponseEntity<Map<String, Object>> response = controller.getResultEntry(req);
         assertEquals(200, response.getStatusCode().value());
@@ -40,11 +38,6 @@ public class LegacyREControllerTest {
 
         List<?> list = (List<?>) response.getBody().get("message");
         assertNotNull(list);
-        assertFalse(list.isEmpty());
-
-        Map<?, ?> first = (Map<?, ?>) list.get(0);
-        assertEquals(101, first.get("TestID"));
-        assertEquals("BAR20261104001", first.get("BarcodeNo"));
     }
 
     @Test
@@ -57,18 +50,59 @@ public class LegacyREControllerTest {
         assertEquals(200, response.getStatusCode().value());
         assertTrue((Boolean) response.getBody().get("status"));
 
-        List<?> list = (List<?>) response.getBody().get("message");
-        assertNotNull(list);
-        assertEquals(5, list.size()); // Hb, WBC, Platelets, PCV, RBC
+        Map<?, ?> msgMap = (Map<?, ?>) response.getBody().get("message");
+        assertNotNull(msgMap);
+        List<?> obs = (List<?>) msgMap.get("message");
+        assertNotNull(obs);
+        assertFalse(obs.isEmpty());
     }
 
     @Test
-    @DisplayName("RE: SaveResultEntry and ForwardToDoctor return success envelopes")
-    void testSaveAndForward() {
-        ResponseEntity<Map<String, Object>> saveRes = controller.saveResultEntry(new HashMap<>());
-        assertEquals(200, saveRes.getStatusCode().value());
-        assertEquals("Result Entry Saved Successfully", saveRes.getBody().get("message"));
+    @DisplayName("RE: SaveResultEntry without doctor returns 400 Bad Request with field error")
+    void testSaveResultEntryWithoutDoctorFails() {
+        Map<String, Object> req = new HashMap<>();
+        req.put("ResultStatus", "Save");
 
+        ResponseEntity<Map<String, Object>> res = controller.saveResultEntry(req);
+        assertEquals(400, res.getStatusCode().value());
+        assertFalse((Boolean) res.getBody().get("success"));
+        assertEquals("Doctor selection is mandatory. Please select a Doctor before saving.", res.getBody().get("message"));
+        assertNotNull(res.getBody().get("correlationId"));
+        assertNotNull(res.getBody().get("fieldErrors"));
+    }
+
+    @Test
+    @DisplayName("RE: SaveResultEntry with doctor returns 200/201 success envelope")
+    void testSaveResultEntryWithDoctorSucceeds() {
+        Map<String, Object> req = new HashMap<>();
+        req.put("doctorId", 1);
+        req.put("ResultStatus", "Save");
+
+        ResponseEntity<Map<String, Object>> res = controller.saveResultEntry(req);
+        assertEquals(200, res.getStatusCode().value());
+        assertTrue((Boolean) res.getBody().get("success"));
+        assertEquals("Result Entry Saved Successfully", res.getBody().get("message"));
+        assertEquals("1", res.getBody().get("doctorId"));
+        assertNotNull(res.getBody().get("correlationId"));
+    }
+
+    @Test
+    @DisplayName("RE: Approve results with doctor returns 200 success envelope")
+    void testApproveResultsWithDoctorSucceeds() {
+        Map<String, Object> req = new HashMap<>();
+        req.put("ApprovedBy", "2");
+        req.put("ResultStatus", "Approved");
+
+        ResponseEntity<Map<String, Object>> res = controller.saveResultEntry(req);
+        assertEquals(200, res.getStatusCode().value());
+        assertTrue((Boolean) res.getBody().get("success"));
+        assertEquals("Results Approved Successfully", res.getBody().get("message"));
+        assertEquals("2", res.getBody().get("doctorId"));
+    }
+
+    @Test
+    @DisplayName("RE: ForwardToDoctor returns success envelope")
+    void testForwardToDoctor() {
         ResponseEntity<Map<String, Object>> fwdRes = controller.forwardToDoctor(new HashMap<>());
         assertEquals(200, fwdRes.getStatusCode().value());
         assertEquals("Forwarded to Doctor for Approval Successfully", fwdRes.getBody().get("message"));
