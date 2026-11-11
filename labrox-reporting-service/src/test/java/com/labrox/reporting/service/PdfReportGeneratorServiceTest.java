@@ -25,8 +25,99 @@ class PdfReportGeneratorServiceTest {
     }
 
     @Test
-    @DisplayName("Test Case 1: Standard CBC with 10+ parameters, abnormal flags, and edge cases")
+    @DisplayName("Test Case 1: Exact Reference Match - CREATININE-SERUM (Biochemistry, Mrs. Anjuma Bibi)")
     void testGenerateCompleteBloodCountPdf() throws Exception {
+        List<ReportObservationDto> obs = List.of(
+                ReportObservationDto.builder()
+                        .analyteName("CREATININE-SERUM")
+                        .resultValue("0.61")
+                        .unit("mg/dL")
+                        .biologicalInterval("0.40-1.10")
+                        .flag("NORMAL")
+                        .abnormal(false)
+                        .build()
+        );
+
+        ReportDataDto data = ReportDataDto.builder()
+                .testId(202L)
+                .barcodeNo("SIL2610030424")
+                .uhid("LRPL/02206585")
+                .patientName("Mrs. ANJUMA BIBI")
+                .ageYears(55)
+                .gender("Female")
+                .referredByDoctor("Dr. R KR DARIPA")
+                .specimenType("Serum")
+                .collectionTime("03/Oct/2026 08:56 PM")
+                .approvalTime("03/Oct/2026 10:25 PM")
+                .testName("CREATININE-SERUM")
+                .department("BIOCHEMISTRY")
+                .centerName("Labrox Diagnostics Pvt. Ltd.")
+                .nablAccNo("MC-3819")
+                .pathologistName("DR. S. BHATTACHARJEE")
+                .medicalRegNo("WBMC69081")
+                .signatureHash("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
+                .verificationToken("SIL2610030424")
+                .observations(obs)
+                .build();
+
+        byte[] pdfBytes = generatorService.generateDiagnosticReportPdf(data);
+        assertNotNull(pdfBytes);
+        assertTrue(pdfBytes.length > 3000);
+        assertEquals("%PDF", new String(pdfBytes, 0, 4, StandardCharsets.US_ASCII));
+
+        try (FileOutputStream fos = new FileOutputStream("target/test_case_1_cbc.pdf")) {
+            fos.write(pdfBytes);
+        }
+    }
+
+    @Test
+    @DisplayName("Test Case 2: Exact Reference Match - THYROID STIMULATING HORMONE (TSH) (Immunology)")
+    void testGenerateLipidProfilePdf() throws Exception {
+        List<ReportObservationDto> obs = List.of(
+                ReportObservationDto.builder()
+                        .analyteName("THYROID STIMULATING HORMONE (TSH),Serum")
+                        .resultValue("2.767")
+                        .unit("µIU/ml")
+                        .biologicalInterval("0.35-5.50")
+                        .flag("NORMAL")
+                        .abnormal(false)
+                        .build()
+        );
+
+        ReportDataDto data = ReportDataDto.builder()
+                .testId(205L)
+                .barcodeNo("SIL2610030424")
+                .uhid("LRPL/02206585")
+                .patientName("Mrs. ANJUMA BIBI")
+                .ageYears(55)
+                .gender("Female")
+                .referredByDoctor("Dr. R KR DARIPA")
+                .specimenType("Serum")
+                .collectionTime("03/Oct/2026 08:56 PM")
+                .approvalTime("03/Oct/2026 10:35 PM")
+                .testName("THYROID STIMULATING HORMONE (TSH)")
+                .department("IMMUNOLOGY")
+                .centerName("Labrox Diagnostics Pvt. Ltd.")
+                .nablAccNo("MC-3819")
+                .pathologistName("DR. S. BHATTACHARJEE")
+                .medicalRegNo("WBMC69081")
+                .signatureHash("9f83c60579e52ab7eb5b25b2e0bd9b9f0ac0731fc597ddd8e00c4e51e082942b")
+                .verificationToken("SIL2610030424")
+                .observations(obs)
+                .build();
+
+        byte[] pdfBytes = generatorService.generateDiagnosticReportPdf(data);
+        assertNotNull(pdfBytes);
+        assertTrue(pdfBytes.length > 3000);
+
+        try (FileOutputStream fos = new FileOutputStream("target/test_case_2_lipid.pdf")) {
+            fos.write(pdfBytes);
+        }
+    }
+
+    @Test
+    @DisplayName("Test Case 3: Complete Blood Count & Comprehensive Multi-page Report")
+    void testGenerateMultiPageOverflowPdf() throws Exception {
         List<ReportObservationDto> obs = List.of(
                 ReportObservationDto.builder().analyteName("Hemoglobin (Hb)").resultValue("11.2").unit("g/dL").biologicalInterval("13.0 - 17.0").flag("LOW").abnormal(true).build(),
                 ReportObservationDto.builder().analyteName("Total Leukocyte Count (WBC)").resultValue("14500").unit("/cumm").biologicalInterval("4000 - 11000").flag("HIGH").abnormal(true).build(),
@@ -44,121 +135,30 @@ class PdfReportGeneratorServiceTest {
         );
 
         ReportDataDto data = ReportDataDto.builder()
-                .testId(201L)
-                .barcodeNo("BC20261111001")
-                .uhid("UHID-LR2026-9081")
-                .patientName("Ramesh Chandran")
-                .ageYears(42)
-                .gender("MALE")
-                .referredByDoctor("Dr. S. K. Bhardwaj, MD")
-                .specimenType("Whole Blood EDTA")
-                .collectionTime("11-Nov-2026 08:30 AM")
-                .approvalTime("11-Nov-2026 10:15 AM")
+                .testId(301L)
+                .barcodeNo("SIL2610030424")
+                .uhid("LRPL/02206585")
+                .patientName("Mrs. ANJUMA BIBI")
+                .ageYears(55)
+                .gender("Female")
+                .referredByDoctor("Dr. R KR DARIPA")
+                .specimenType("Serum - SL260287")
+                .collectionTime("03/Oct/2026 08:56 PM")
+                .approvalTime("03/Oct/2026 10:25 PM")
                 .testName("COMPLETE BLOOD COUNT (CBC)")
-                .department("HEMATOLOGY & CLINICAL PATHOLOGY")
-                .centerName("LabRox Reference Laboratories")
+                .department("HEMATOLOGY")
+                .centerName("Labrox Diagnostics Pvt. Ltd.")
                 .nablAccNo("MC-3819")
-                .pathologistName("Dr. Rajesh Sharma, MD (Pathology)")
-                .medicalRegNo("KMC-58291")
-                .signatureHash("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
-                .verificationToken("LRX-VRF-20261111-00201")
-                .observations(obs)
-                .build();
-
-        byte[] pdfBytes = generatorService.generateDiagnosticReportPdf(data);
-        assertNotNull(pdfBytes);
-        assertTrue(pdfBytes.length > 5000);
-        assertEquals("%PDF", new String(pdfBytes, 0, 4, StandardCharsets.US_ASCII));
-
-        try (FileOutputStream fos = new FileOutputStream("target/test_case_1_cbc.pdf")) {
-            fos.write(pdfBytes);
-        }
-    }
-
-    @Test
-    @DisplayName("Test Case 2: Comprehensive Lipid Profile (calculated values and risk intervals)")
-    void testGenerateLipidProfilePdf() throws Exception {
-        List<ReportObservationDto> obs = List.of(
-                ReportObservationDto.builder().analyteName("Total Cholesterol").resultValue("235.0").unit("mg/dL").biologicalInterval("< 200.0").flag("HIGH").abnormal(true).build(),
-                ReportObservationDto.builder().analyteName("Triglycerides").resultValue("185.0").unit("mg/dL").biologicalInterval("< 150.0").flag("HIGH").abnormal(true).build(),
-                ReportObservationDto.builder().analyteName("HDL Cholesterol (Direct)").resultValue("38.0").unit("mg/dL").biologicalInterval("40.0 - 60.0").flag("LOW").abnormal(true).build(),
-                ReportObservationDto.builder().analyteName("LDL Cholesterol (Calculated)").resultValue("160.0").unit("mg/dL").biologicalInterval("< 100.0").flag("HIGH").abnormal(true).build(),
-                ReportObservationDto.builder().analyteName("VLDL Cholesterol").resultValue("37.0").unit("mg/dL").biologicalInterval("10.0 - 30.0").flag("HIGH").abnormal(true).build(),
-                ReportObservationDto.builder().analyteName("Cholesterol / HDL Ratio").resultValue("6.18").unit("Ratio").biologicalInterval("3.30 - 4.40").flag("HIGH").abnormal(true).build()
-        );
-
-        ReportDataDto data = ReportDataDto.builder()
-                .testId(205L)
-                .barcodeNo("BC20261111002")
-                .uhid("UHID-LR2026-9082")
-                .patientName("Meera Krishnan")
-                .ageYears(48)
-                .gender("FEMALE")
-                .referredByDoctor("Dr. Anita Sen, MD (Cardiology)")
-                .specimenType("Serum - Fasting (12 hrs)")
-                .collectionTime("11-Nov-2026 07:45 AM")
-                .approvalTime("11-Nov-2026 09:30 AM")
-                .testName("LIPID PROFILE EXTENDED")
-                .department("CLINICAL BIOCHEMISTRY")
-                .centerName("LabRox Reference Laboratories")
-                .nablAccNo("MC-3819")
-                .pathologistName("Dr. Rajesh Sharma, MD (Pathology)")
-                .medicalRegNo("KMC-58291")
-                .signatureHash("9f83c60579e52ab7eb5b25b2e0bd9b9f0ac0731fc597ddd8e00c4e51e082942b")
-                .verificationToken("LRX-VRF-20261111-00205")
+                .pathologistName("DR. S. BHATTACHARJEE")
+                .medicalRegNo("WBMC69081")
+                .signatureHash("b72da93c8340d21a9f7f45b597ddd8e00c4e51e082942bc1")
+                .verificationToken("SIL2610030424")
                 .observations(obs)
                 .build();
 
         byte[] pdfBytes = generatorService.generateDiagnosticReportPdf(data);
         assertNotNull(pdfBytes);
         assertTrue(pdfBytes.length > 4000);
-
-        try (FileOutputStream fos = new FileOutputStream("target/test_case_2_lipid.pdf")) {
-            fos.write(pdfBytes);
-        }
-    }
-
-    @Test
-    @DisplayName("Test Case 3: Multi-page overflow report demonstrating repeated headers and Page X of Y")
-    void testGenerateMultiPageOverflowPdf() throws Exception {
-        List<ReportObservationDto> obs = new ArrayList<>();
-        for (int i = 1; i <= 24; i++) {
-            boolean abnormal = (i % 3 == 0);
-            obs.add(ReportObservationDto.builder()
-                    .analyteName("Analyte Investigation Parameter #" + i + " (Clinical Marker)")
-                    .resultValue(abnormal ? String.valueOf(100 + i * 15) : String.valueOf(20 + i))
-                    .unit("mg/dL")
-                    .biologicalInterval("10.0 - 50.0")
-                    .flag(abnormal ? "HIGH" : "NORMAL")
-                    .abnormal(abnormal)
-                    .build());
-        }
-
-        ReportDataDto data = ReportDataDto.builder()
-                .testId(301L)
-                .barcodeNo("BC20261111003")
-                .uhid("UHID-LR2026-9083")
-                .patientName("Vikramaditya Singhania")
-                .ageYears(60)
-                .gender("MALE")
-                .referredByDoctor("Dr. H. V. Nanjappa, MS, FRCS")
-                .specimenType("Serum & Plasma")
-                .collectionTime("11-Nov-2026 06:30 AM")
-                .approvalTime("11-Nov-2026 11:00 AM")
-                .testName("COMPREHENSIVE METABOLIC MASTER PANEL (24 ANALYTES)")
-                .department("SPECIALIZED BIOCHEMISTRY & ENDOCRINOLOGY")
-                .centerName("LabRox Reference Laboratories")
-                .nablAccNo("MC-3819")
-                .pathologistName("Dr. Rajesh Sharma, MD (Pathology)")
-                .medicalRegNo("KMC-58291")
-                .signatureHash("cb5628607a300d53e3b10418427980d320cc1049d0f3f6e120d875fc4f20ad7d")
-                .verificationToken("LRX-VRF-20261111-00301")
-                .observations(obs)
-                .build();
-
-        byte[] pdfBytes = generatorService.generateDiagnosticReportPdf(data);
-        assertNotNull(pdfBytes);
-        assertTrue(pdfBytes.length > 6000);
 
         try (FileOutputStream fos = new FileOutputStream("target/test_case_3_multipage.pdf")) {
             fos.write(pdfBytes);

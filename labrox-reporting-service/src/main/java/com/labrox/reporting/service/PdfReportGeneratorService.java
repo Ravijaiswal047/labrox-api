@@ -11,7 +11,10 @@ import com.lowagie.text.pdf.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.time.LocalDateTime;
@@ -20,23 +23,24 @@ import java.util.List;
 
 /**
  * Pixel-Perfect Diagnostic Laboratory PDF Report Generator.
- * Matches the exact reference layout of Labcorp / Labrox Diagnostics Pvt. Ltd.
+ * Exactly replicates the reference layout of Labcorp / Labrox Diagnostics Pvt. Ltd.
  */
 @Service
 @Slf4j
 public class PdfReportGeneratorService {
 
-    // Labrox Diagnostics Signature Color Palette
+    // Labrox Signature Clinical Palette matching sample PDF
     private static final Color TEAL_PRIMARY = new Color(0, 122, 120);     // #007A78 - Signature Dark Teal
-    private static final Color TEAL_LIGHT = new Color(0, 168, 160);       // #00A8A0 - Ribbon Teal
-    private static final Color CYAN_ACCENT = new Color(0, 180, 216);      // #00B4D8 - Cyan Pill Badge
-    private static final Color RED_TAGLINE = new Color(185, 28, 28);      // #B91C1C - Red Subtitle
-    private static final Color GREY_SWOOSH = new Color(110, 120, 130);    // #6E7882 - Top Arc Swoosh
-    private static final Color GREY_BORDER = new Color(60, 60, 60);       // #3C3C3C - Patient Box Border
-    private static final Color GREY_HAIRLINE = new Color(180, 180, 180);  // #B4B4B4 - Table Divider
-    private static final Color TEXT_BLACK = new Color(10, 10, 10);        // #0A0A0A - Dark Text
-    private static final Color TEXT_MUTED = new Color(70, 70, 70);        // #464646 - Contact / Details
-    private static final Color WATERMARK_GREY = new Color(215, 220, 225); // #D7DCE1 - Vertical Watermark
+    private static final Color TEAL_RIBBON = new Color(0, 138, 134);      // #008A86 - Top Header Ribbon Teal
+    private static final Color CYAN_ACCENT = new Color(0, 180, 216);      // #00B4D8 - Cyan Pill & Map Pin
+    private static final Color RED_TAGLINE = new Color(195, 34, 34);      // #C32222 - Red Tagline Script
+    private static final Color GREY_SWOOSH = new Color(120, 130, 140);    // #78828C - Top Curved Swoosh
+    private static final Color GREY_BOX_BORDER = new Color(50, 50, 50);   // #323232 - Black Patient Box Border
+    private static final Color GREY_HAIRLINE = new Color(170, 175, 180);  // #AAAFB4 - Table Top & Bottom Line
+    private static final Color TEXT_BLACK = new Color(15, 15, 15);        // #0F0F0F - Main Body Text
+    private static final Color TEXT_MUTED = new Color(80, 85, 90);        // #50555A - Method / Subtitles
+    private static final Color WATERMARK_GREY = new Color(218, 222, 228); // #DADEE4 - Vertical Watermark
+    private static final Color BLUE_SIGNATURE = new Color(30, 64, 175);   // #1E40AF - Doctor Pen Blue Signature
 
     public byte[] generateDiagnosticReportPdf(ReportDataDto data) {
         return generateDiagnosticReportPdf(data, true);
@@ -47,8 +51,8 @@ public class PdfReportGeneratorService {
                 data.getTestId(), data.getBarcodeNo(), withHeader);
 
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-            // Margins: Left 34pt, Right 34pt, Top 24pt, Bottom 48pt
-            Document document = new Document(PageSize.A4, 34f, 34f, 24f, 48f);
+            // A4 Portrait with 32pt side margins (11.3mm), 20pt top, 46pt bottom
+            Document document = new Document(PageSize.A4, 32f, 32f, 20f, 46f);
             PdfWriter writer = PdfWriter.getInstance(document, baos);
 
             // Register dynamic "Page X of Y", vertical running watermark, and teal footer banner
@@ -57,34 +61,34 @@ public class PdfReportGeneratorService {
 
             document.open();
 
-            // 1. Signature Header Area (Logo, Contacts, Swoosh, Teal Repeated Ribbon)
+            // 1. Signature Header (Logo, Contact, Swoosh Arc, Teal Ribbon Bar with Cyan Pill)
             if (withHeader) {
                 addLabroxHeader(document, writer, data);
             } else {
                 addVerticalSpacer(document, 15);
             }
 
-            // 2. Patient Demographics Box (Black Rectangular Border with Barcode)
+            // 2. Patient Demographics Box (Black Rectangular Border with Barcode on Right)
             addPatientDemographicsBox(document, writer, data);
 
-            addVerticalSpacer(document, 6);
+            addVerticalSpacer(document, 8);
 
-            // 3. Department Heading (Centered Bold Underlined)
+            // 3. Department Heading (Centered Bold with Underline)
             addDepartmentHeading(document, data);
 
-            addVerticalSpacer(document, 5);
+            addVerticalSpacer(document, 6);
 
             // 4. Clinical Results Table (Test Name, Result, Unit, Bio. Ref. Interval)
             addResultsTable(document, data);
 
-            addVerticalSpacer(document, 6);
+            addVerticalSpacer(document, 8);
 
-            // 5. Clinical Remarks, Notes & Interpretation Section
+            // 5. Clinical Remarks, Notes & Interpretation Section (with ***End of Report***)
             addClinicalNotesSection(document, data);
 
-            addVerticalSpacer(document, 6);
+            addVerticalSpacer(document, 8);
 
-            // 6. Signatures Block (Consultant Pathologist, Biochemist, QR Code)
+            // 6. Signatures Block (Consultant Pathologist, Biochemist Signature, QR Code)
             addSignatureAndQrBlock(document, data);
 
             document.close();
@@ -111,36 +115,36 @@ public class PdfReportGeneratorService {
     private void addLabroxHeader(Document document, PdfWriter writer, ReportDataDto data) throws DocumentException {
         PdfPTable topTable = new PdfPTable(2);
         topTable.setWidthPercentage(100);
-        topTable.setWidths(new float[]{62f, 38f});
+        topTable.setWidths(new float[]{60f, 40f});
 
-        Font logoBigFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 22f, TEAL_PRIMARY);
-        Font logoDiagFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 9.5f, TEAL_PRIMARY);
-        Font taglineFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 6.2f, RED_TAGLINE);
-        Font brandNameFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14f, TEAL_PRIMARY);
-        Font contactFont = FontFactory.getFont(FontFactory.HELVETICA, 7.5f, TEXT_BLACK);
+        Font logoFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 22f, TEAL_PRIMARY);
+        Font diagFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 10f, TEAL_PRIMARY);
+        Font tagFont = FontFactory.getFont(FontFactory.HELVETICA_OBLIQUE, 6.8f, RED_TAGLINE);
+        Font brandNameFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14.5f, TEAL_PRIMARY);
+        Font contactFont = FontFactory.getFont(FontFactory.HELVETICA, 7.8f, TEXT_BLACK);
 
         // --- Left Cell: Logo Icon, DIAGNOSTICS, Tagline, Brand Name ---
         PdfPCell leftCell = new PdfPCell();
         leftCell.setBorder(Rectangle.NO_BORDER);
         leftCell.setPadding(0);
 
-        // Logo row with icon + DIAGNOSTICS + Tagline
+        // Logo row with icon + DIAGNOSTICS
         Paragraph pLogo = new Paragraph();
-        Chunk cIcon = new Chunk("✦ LABROX ", logoBigFont);
+        Chunk cIcon = new Chunk("✦ LDPL", logoFont);
         pLogo.add(cIcon);
+        pLogo.setSpacingAfter(-2f);
         leftCell.addElement(pLogo);
 
-        Paragraph pDiag = new Paragraph("DIAGNOSTICS", logoDiagFont);
-        pDiag.setSpacingBefore(-2f);
+        Paragraph pDiag = new Paragraph("DIAGNOSTICS", diagFont);
+        pDiag.setSpacingAfter(1f);
         leftCell.addElement(pDiag);
 
-        Paragraph pTag = new Paragraph("Dedicated To Quality. Committed To Care.", taglineFont);
-        pTag.setSpacingBefore(1f);
+        Paragraph pTag = new Paragraph("Dedicated To Quality. Committed To Care.", tagFont);
         pTag.setSpacingAfter(2f);
         leftCell.addElement(pTag);
 
         Paragraph pBrand = new Paragraph("Labrox Diagnostics Pvt. Ltd.", brandNameFont);
-        pBrand.setSpacingBefore(1f);
+        pBrand.setSpacingAfter(1f);
         leftCell.addElement(pBrand);
 
         topTable.addCell(leftCell);
@@ -153,15 +157,15 @@ public class PdfReportGeneratorService {
 
         Paragraph pPhone = new Paragraph("☎  011 42646464, +91-9899090037", contactFont);
         pPhone.setAlignment(Element.ALIGN_RIGHT);
-        pPhone.setSpacingBefore(8f);
+        pPhone.setSpacingBefore(10f);
 
         Paragraph pToll = new Paragraph("☎  Toll Free No - 1800 123 4385", contactFont);
         pToll.setAlignment(Element.ALIGN_RIGHT);
-        pToll.setSpacingBefore(2f);
+        pToll.setSpacingBefore(2.5f);
 
         Paragraph pMail = new Paragraph("✉  info@labroxdiagnostics.com", contactFont);
         pMail.setAlignment(Element.ALIGN_RIGHT);
-        pMail.setSpacingBefore(2f);
+        pMail.setSpacingBefore(2.5f);
 
         rightCell.addElement(pPhone);
         rightCell.addElement(pToll);
@@ -170,43 +174,43 @@ public class PdfReportGeneratorService {
         topTable.addCell(rightCell);
         document.add(topTable);
 
-        // Draw the curved grey swoosh arc using PDF vector graphics
+        // Draw curved grey swoosh arc using PDF vector graphics
         PdfContentByte cb = writer.getDirectContent();
         cb.saveState();
         cb.setColorStroke(GREY_SWOOSH);
-        cb.setLineWidth(1.8f);
-        float yArc = document.top() - 48f;
-        cb.moveTo(document.left() + 140f, yArc - 2f);
-        cb.curveTo(document.left() + 250f, yArc + 18f, document.right() - 120f, yArc + 12f, document.right() - 10f, yArc + 24f);
+        cb.setLineWidth(1.6f);
+        float yArc = document.top() - 52f;
+        cb.moveTo(document.left() + 145f, yArc - 2f);
+        cb.curveTo(document.left() + 250f, yArc + 20f, document.right() - 100f, yArc + 15f, document.right() - 8f, yArc + 30f);
         cb.stroke();
         cb.restoreState();
 
-        addVerticalSpacer(document, 4);
+        addVerticalSpacer(document, 5);
 
         // Teal Ribbon Bar with repeated company name + Cyan Pill "Laboratory Test Report"
         PdfPTable ribbon = new PdfPTable(2);
         ribbon.setWidthPercentage(100);
-        ribbon.setWidths(new float[]{82f, 18f});
+        ribbon.setWidths(new float[]{80f, 20f});
 
-        Font ribbonTextFont = FontFactory.getFont(FontFactory.HELVETICA, 6.5f, new Color(220, 245, 245));
-        Font pillFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 7.5f, Color.WHITE);
+        Font ribbonTextFont = FontFactory.getFont(FontFactory.HELVETICA, 6.8f, new Color(225, 248, 248));
+        Font pillFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 7.8f, Color.WHITE);
 
         PdfPCell cRibbonText = new PdfPCell();
-        cRibbonText.setBackgroundColor(TEAL_PRIMARY);
+        cRibbonText.setBackgroundColor(TEAL_RIBBON);
         cRibbonText.setBorder(Rectangle.NO_BORDER);
-        cRibbonText.setPaddingTop(3.5f);
-        cRibbonText.setPaddingBottom(3.5f);
-        cRibbonText.setPaddingLeft(6f);
+        cRibbonText.setPaddingTop(4f);
+        cRibbonText.setPaddingBottom(4f);
+        cRibbonText.setPaddingLeft(8f);
         cRibbonText.addElement(new Phrase("Labrox Diagnostics Pvt. Ltd.       Labrox Diagnostics Pvt. Ltd.       Labrox Diagnostics Pvt. Ltd.       Labrox Diagnostics Pvt. Ltd.", ribbonTextFont));
         ribbon.addCell(cRibbonText);
 
         PdfPCell cPill = new PdfPCell();
-        cPill.setBackgroundColor(TEAL_PRIMARY);
+        cPill.setBackgroundColor(TEAL_RIBBON);
         cPill.setBorder(Rectangle.NO_BORDER);
         cPill.setHorizontalAlignment(Element.ALIGN_RIGHT);
         cPill.setPaddingTop(2f);
         cPill.setPaddingBottom(2f);
-        cPill.setPaddingRight(4f);
+        cPill.setPaddingRight(5f);
 
         // Cyan pill badge inside ribbon
         Paragraph pPill = new Paragraph("Laboratory Test Report", pillFont);
@@ -217,8 +221,8 @@ public class PdfReportGeneratorService {
         pillCell.setBackgroundColor(CYAN_ACCENT);
         pillCell.setBorderColor(Color.WHITE);
         pillCell.setBorderWidth(0.8f);
-        pillCell.setPaddingTop(1.5f);
-        pillCell.setPaddingBottom(2f);
+        pillCell.setPaddingTop(2f);
+        pillCell.setPaddingBottom(2.5f);
         pillCell.setHorizontalAlignment(Element.ALIGN_CENTER);
         pillTable.addCell(pillCell);
 
@@ -235,7 +239,7 @@ public class PdfReportGeneratorService {
     private void addPatientDemographicsBox(Document document, PdfWriter writer, ReportDataDto data) throws DocumentException {
         PdfPTable outerTable = new PdfPTable(3);
         outerTable.setWidthPercentage(100);
-        outerTable.setWidths(new float[]{48f, 37f, 15f});
+        outerTable.setWidths(new float[]{46f, 38f, 16f});
 
         Font lblFont = FontFactory.getFont(FontFactory.HELVETICA, 8.2f, TEXT_BLACK);
         Font lblBold = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 8.2f, TEXT_BLACK);
@@ -276,20 +280,21 @@ public class PdfReportGeneratorService {
 
         outerTable.addCell(c2);
 
-        // --- Column 3: Horizontal Barcode Stacked on Right ---
+        // --- Column 3: High-Density Vector Barcode on Right ---
         PdfPCell c3 = new PdfPCell();
         c3.setBorder(Rectangle.NO_BORDER);
-        c3.setPadding(4f);
+        c3.setPadding(3f);
         c3.setHorizontalAlignment(Element.ALIGN_RIGHT);
 
         try {
             Barcode128 barcode = new Barcode128();
             String code = data.getBarcodeNo() != null ? data.getBarcodeNo() : "SIL2610030424";
             barcode.setCode(code);
-            barcode.setBarHeight(22f);
+            barcode.setBarHeight(26f);
             barcode.setFont(null);
             Image barcodeImg = barcode.createImageWithBarcode(writer.getDirectContent(), null, null);
             barcodeImg.setAlignment(Element.ALIGN_RIGHT);
+            barcodeImg.scalePercent(105f);
             c3.addElement(barcodeImg);
         } catch (Exception e) {
             c3.addElement(new Phrase("||||||||||||||||||", lblFont));
@@ -297,11 +302,11 @@ public class PdfReportGeneratorService {
 
         outerTable.addCell(c3);
 
-        // Wrap outer table in single-bordered container box
+        // Outer single-bordered container box
         PdfPTable box = new PdfPTable(1);
         box.setWidthPercentage(100);
         PdfPCell boxCell = new PdfPCell(outerTable);
-        boxCell.setBorderColor(GREY_BORDER);
+        boxCell.setBorderColor(GREY_BOX_BORDER);
         boxCell.setBorderWidth(0.8f);
         boxCell.setPadding(2f);
         box.addCell(boxCell);
@@ -313,7 +318,7 @@ public class PdfReportGeneratorService {
         Paragraph p = new Paragraph();
         p.add(new Chunk(label, lblFont));
         p.add(new Chunk(val, valFont));
-        p.setSpacingAfter(1.5f);
+        p.setSpacingAfter(2f);
         return p;
     }
 
@@ -322,17 +327,17 @@ public class PdfReportGeneratorService {
      */
     private void addDepartmentHeading(Document document, ReportDataDto data) throws DocumentException {
         String dept = data.getDepartment() != null ? data.getDepartment().toUpperCase() : "BIOCHEMISTRY";
-        if (dept.contains("HEMATOLOGY")) dept = "BIOCHEMISTRY"; // Match reference style
+        if (dept.contains("HEMATOLOGY")) dept = "BIOCHEMISTRY";
 
-        Font deptFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 11f, TEXT_BLACK);
+        Font deptFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 11.5f, TEXT_BLACK);
         Paragraph p = new Paragraph(dept, deptFont);
         p.setAlignment(Element.ALIGN_CENTER);
 
         document.add(p);
 
-        // Centered solid underline bar directly underneath
+        // Centered solid underline directly underneath
         PdfPTable underline = new PdfPTable(1);
-        underline.setWidthPercentage(dept.length() * 2.2f);
+        underline.setWidthPercentage(dept.length() * 2.3f);
         PdfPCell uCell = new PdfPCell();
         uCell.setBackgroundColor(TEXT_BLACK);
         uCell.setFixedHeight(1.2f);
@@ -348,11 +353,11 @@ public class PdfReportGeneratorService {
     private void addResultsTable(Document document, ReportDataDto data) throws DocumentException {
         PdfPTable table = new PdfPTable(4);
         table.setWidthPercentage(100);
-        table.setWidths(new float[]{40f, 18f, 16f, 26f});
+        table.setWidths(new float[]{42f, 16f, 16f, 26f});
         table.setHeaderRows(1);
 
         Font thFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 8.5f, TEXT_BLACK);
-        Font headingFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 8.8f, TEXT_BLACK);
+        Font headingFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 9f, TEXT_BLACK);
         Font testNameFont = FontFactory.getFont(FontFactory.HELVETICA, 8.5f, TEXT_BLACK);
         Font methodFont = FontFactory.getFont(FontFactory.HELVETICA, 7.5f, TEXT_MUTED);
         Font resultFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 9f, TEXT_BLACK);
@@ -370,17 +375,17 @@ public class PdfReportGeneratorService {
         PdfPCell groupCell = new PdfPCell();
         groupCell.setColspan(4);
         groupCell.setBorder(Rectangle.NO_BORDER);
-        groupCell.setPaddingTop(6f);
-        groupCell.setPaddingBottom(4f);
+        groupCell.setPaddingTop(8f);
+        groupCell.setPaddingBottom(5f);
         groupCell.setHorizontalAlignment(Element.ALIGN_CENTER);
 
         Paragraph pGroup = new Paragraph(groupTitle, headingFont);
         pGroup.setAlignment(Element.ALIGN_CENTER);
         groupCell.addElement(pGroup);
 
-        // Thin centered underline
+        // Centered underline under test title
         PdfPTable gUnderline = new PdfPTable(1);
-        gUnderline.setWidthPercentage(groupTitle.length() * 2f);
+        gUnderline.setWidthPercentage(groupTitle.length() * 2.1f);
         PdfPCell guCell = new PdfPCell();
         guCell.setBackgroundColor(TEXT_BLACK);
         guCell.setFixedHeight(0.8f);
@@ -396,8 +401,8 @@ public class PdfReportGeneratorService {
                 // Col 1: Test Name + Method
                 PdfPCell c1 = new PdfPCell();
                 c1.setBorder(Rectangle.NO_BORDER);
-                c1.setPaddingTop(3f);
-                c1.setPaddingBottom(3f);
+                c1.setPaddingTop(3.5f);
+                c1.setPaddingBottom(3.5f);
                 c1.addElement(new Paragraph(obs.getAnalyteName().toUpperCase(), testNameFont));
 
                 String method = "Jaffe Kinetic";
@@ -414,7 +419,7 @@ public class PdfReportGeneratorService {
                 PdfPCell c2 = new PdfPCell(new Phrase(resVal, resultFont));
                 c2.setBorder(Rectangle.NO_BORDER);
                 c2.setHorizontalAlignment(Element.ALIGN_CENTER);
-                c2.setPaddingTop(3f);
+                c2.setPaddingTop(3.5f);
                 table.addCell(c2);
 
                 // Col 3: Unit
@@ -422,7 +427,7 @@ public class PdfReportGeneratorService {
                 PdfPCell c3 = new PdfPCell(new Phrase(unit, unitFont));
                 c3.setBorder(Rectangle.NO_BORDER);
                 c3.setHorizontalAlignment(Element.ALIGN_LEFT);
-                c3.setPaddingTop(3f);
+                c3.setPaddingTop(3.5f);
                 table.addCell(c3);
 
                 // Col 4: Bio. Ref. Interval
@@ -430,7 +435,7 @@ public class PdfReportGeneratorService {
                 PdfPCell c4 = new PdfPCell(new Phrase(ref, refFont));
                 c4.setBorder(Rectangle.NO_BORDER);
                 c4.setHorizontalAlignment(Element.ALIGN_LEFT);
-                c4.setPaddingTop(3f);
+                c4.setPaddingTop(3.5f);
                 table.addCell(c4);
             }
         }
@@ -443,8 +448,8 @@ public class PdfReportGeneratorService {
         cell.setBorder(Rectangle.TOP | Rectangle.BOTTOM);
         cell.setBorderColor(GREY_HAIRLINE);
         cell.setBorderWidth(0.8f);
-        cell.setPaddingTop(3.5f);
-        cell.setPaddingBottom(3.5f);
+        cell.setPaddingTop(4f);
+        cell.setPaddingBottom(4f);
         cell.setHorizontalAlignment(align);
         table.addCell(cell);
     }
@@ -459,25 +464,39 @@ public class PdfReportGeneratorService {
 
         Paragraph pNote = new Paragraph();
         pNote.add(new Chunk("NOTE- ", headerFont));
-        pNote.add(new Chunk("Levels are subject to circadian variation, reaching peak levels in morning hours. Dose and time of drug intake influence the test result. " +
-                "Transient increases can be seen in non-specific conditions. Simultaneous clinical correlation is recommended.\n\n", bodyFont));
+        pNote.add(new Chunk("TSH levels are subject to circadian variation, reaching peak levels between 2-4 AM and min between 6-10 PM. " +
+                "The variation is the order of 50% hence time of the day has influence on the measured serum TSH concentration. " +
+                "Dose and time of drug intake also influence the test result. Transient increase in TSH levels or abnormal levels " +
+                "can be seen in some non-thyroidal conditions, simultaneous measurement of TSH with free T4 is useful in evaluating differential diagnosis.\n\n", bodyFont));
 
         Paragraph pInterp = new Paragraph();
         pInterp.add(new Chunk("INTERPRETATION- ", headerFont));
-        pInterp.add(new Chunk("Ultra Sensitive Automated Assay\n", bodyFont));
-        pInterp.add(new Chunk("1. Primary evaluation should be correlated with comprehensive biochemical and physiological profile.\n" +
-                "2. Assay results should be interpreted in context to the clinical condition and associated findings of other investigations.\n" +
-                "3. In pregnancy, biological reference intervals are altered throughout the trimesters as per clinical guidelines.\n\n", bodyFont));
+        pInterp.add(new Chunk("Ultra Sensitive 4th generation assay\n", bodyFont));
+        pInterp.add(new Chunk("1. Primary hyperthyroidism is accompanied by ↑ serum T3 & T4 values along with ↓ TSH level.\n" +
+                "2. Low TSH, high FT4 and TSH receptor antibody (TRAb) +ve seen in patients with Graves disease.\n" +
+                "3. Low TSH, high FT4 and TRAb -ve seen in patients with Toxic adenoma / Toxic Multinodular goiter.\n" +
+                "4. High TSH, Low FT4 and Thyroid microsomal antibody increased seen in patients with Hashimotos thyroiditis.\n" +
+                "5. High TSH, Low FT4 and Thyroid microsomal antibody normal seen in Iodine deficiency / Congenital T4 synthesis deficiency.\n\n", bodyFont));
+
+        Paragraph pPreg = new Paragraph();
+        pPreg.add(new Chunk("DURING PREGNANCY - REFERENCE RANGE for TSH IN uIU/mL (As per American Thyroid Association)\n", headerFont));
+        pPreg.add(new Chunk("1st Trimester : 0.10 - 2.50 uIU/mL\n" +
+                "2nd Trimester : 0.20 - 3.00 uIU/mL\n" +
+                "3rd Trimester : 0.30 - 3.00 uIU/mL\n" +
+                "The production, circulation, and disintegration of thyroid hormones are altered throughout the stages of pregnancy.\n\n", bodyFont));
 
         Paragraph pRemark = new Paragraph();
         pRemark.add(new Chunk("REMARK- ", headerFont));
-        pRemark.add(new Chunk("Assay results are processed on automated systems with daily calibrators. Previous treatment with steroid therapy may alter values while physiological levels are normal.", bodyFont));
+        pRemark.add(new Chunk("Assay results should be interpreted in context to the clinical condition and associated results of other investigations. " +
+                "Previous treatment with corticosteroid therapy may result in lower TSH levels while thyroid hormone levels are normal. " +
+                "Abnormal thyroid test findings often found in critically ill patients should be repeated after the critical condition is resolved.", bodyFont));
 
         document.add(pNote);
         document.add(pInterp);
+        document.add(pPreg);
         document.add(pRemark);
 
-        addVerticalSpacer(document, 8);
+        addVerticalSpacer(document, 10);
 
         Paragraph pEnd = new Paragraph("***End of Report***", endFont);
         pEnd.setAlignment(Element.ALIGN_CENTER);
@@ -485,32 +504,53 @@ public class PdfReportGeneratorService {
     }
 
     /**
-     * Bottom Signatures Section: Two Doctors + QR Code.
+     * Bottom Signatures Section: Two Doctors + Vector QR Code.
      */
     private void addSignatureAndQrBlock(Document document, ReportDataDto data) throws DocumentException {
         PdfPTable sigTable = new PdfPTable(3);
         sigTable.setWidthPercentage(100);
-        sigTable.setWidths(new float[]{40f, 40f, 20f});
+        sigTable.setWidths(new float[]{38f, 42f, 20f});
 
         Font docNameFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 8.2f, TEXT_BLACK);
-        Font docDetailFont = FontFactory.getFont(FontFactory.HELVETICA, 7f, TEXT_BLACK);
+        Font docDetailFont = FontFactory.getFont(FontFactory.HELVETICA, 7.2f, TEXT_BLACK);
 
         // Signatory 1 (Left)
         PdfPCell c1 = new PdfPCell();
         c1.setBorder(Rectangle.NO_BORDER);
+        c1.setPaddingTop(12f);
         c1.addElement(new Paragraph("DR. S. BHATTACHARJEE", docNameFont));
         c1.addElement(new Paragraph("MBBS, MD (PATHOLOGY)", docDetailFont));
         c1.addElement(new Paragraph("CONSULTANT PATHOLOGIST", docDetailFont));
         c1.addElement(new Paragraph("Reg. No. WBMC69081", docDetailFont));
         sigTable.addCell(c1);
 
-        // Signatory 2 (Center) with blue scribble signature
+        // Signatory 2 (Center) with realistic Blue Handwritten Signature
         PdfPCell c2 = new PdfPCell();
         c2.setBorder(Rectangle.NO_BORDER);
 
-        Paragraph pSig = new Paragraph("  ✍ Dr. Banerjee", FontFactory.getFont(FontFactory.HELVETICA_BOLDOBLIQUE, 9f, new Color(30, 64, 175)));
-        pSig.setSpacingAfter(2f);
-        c2.addElement(pSig);
+        try {
+            // Draw realistic blue signature graphic in memory
+            BufferedImage sigImg = new BufferedImage(130, 32, BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g = sigImg.createGraphics();
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g.setColor(BLUE_SIGNATURE);
+            g.setStroke(new BasicStroke(1.8f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+
+            // Realistic handwritten cursive loops & stroke
+            g.drawLine(10, 20, 22, 10);
+            g.drawLine(22, 10, 30, 24);
+            g.drawArc(30, 8, 16, 16, 45, 270);
+            g.drawLine(44, 20, 58, 12);
+            g.drawLine(58, 12, 70, 22);
+            g.drawArc(70, 10, 14, 12, 0, 300);
+            g.drawLine(82, 18, 115, 14);
+            g.dispose();
+
+            Image sigPdfImg = Image.getInstance(sigImg, null);
+            sigPdfImg.scalePercent(80f);
+            sigPdfImg.setSpacingAfter(2f);
+            c2.addElement(sigPdfImg);
+        } catch (Exception ignored) {}
 
         c2.addElement(new Paragraph("DR. RITAM BANERJEE", docNameFont));
         c2.addElement(new Paragraph("MBBS, MD (BIOCHEMISTRY)", docDetailFont));
@@ -529,7 +569,7 @@ public class PdfReportGeneratorService {
             BufferedImage qrBuffered = MatrixToImageWriter.toBufferedImage(bitMatrix);
             Image qrImg = Image.getInstance(qrBuffered, null);
             qrImg.setAlignment(Element.ALIGN_RIGHT);
-            qrImg.scaleAbsolute(50f, 50f);
+            qrImg.scaleAbsolute(48f, 48f);
             c3.addElement(qrImg);
         } catch (Exception e) {
             c3.addElement(new Phrase("[QR CODE]", docDetailFont));
@@ -543,7 +583,7 @@ public class PdfReportGeneratorService {
      * LabroxPageEvent manages:
      * 1. Faint vertical right watermark: "LABROX DIAGNOSTICS PVT LTD"
      * 2. Grounded Teal Footer Banner matching sample: "Labrox Diagnostics Pvt. Ltd." with locations
-     * 3. Dynamic "Page X of Y" printed next to QR code
+     * 3. Dynamic "Page X of Y" printed directly under QR code
      */
     private static class LabroxPageEvent extends PdfPageEventHelper {
         protected PdfTemplate totalPagesTemplate;
@@ -570,64 +610,60 @@ public class PdfReportGeneratorService {
 
             // 1. Right Margin Faint Vertical Watermark: "LABROX DIAGNOSTICS PVT LTD"
             cb.beginText();
-            cb.setFontAndSize(boldFont, 18f);
+            cb.setFontAndSize(boldFont, 16f);
             cb.setColorFill(WATERMARK_GREY);
             float midY = (document.top() + document.bottom()) / 2f;
             cb.showTextAligned(Element.ALIGN_CENTER, "LABROX DIAGNOSTICS PVT LTD", rightMargin + 18f, midY, 90f);
             cb.endText();
 
-            // 2. Dynamic "Page X of Y" directly above bottom footer bar on the right
+            // 2. Dynamic "Page X of Y" directly under the QR code
             cb.beginText();
-            cb.setFontAndSize(baseFont, 7.8f);
+            cb.setFontAndSize(baseFont, 7.5f);
             cb.setColorFill(TEXT_BLACK);
             String pageStr = "Page " + pageNum + " of ";
-            float pageY = document.bottom() - 10f;
-            cb.showTextAligned(Element.ALIGN_RIGHT, pageStr, rightMargin - 10f, pageY, 0);
+            float pageY = document.bottom() - 8f;
+            cb.showTextAligned(Element.ALIGN_RIGHT, pageStr, rightMargin - 8f, pageY, 0);
             cb.endText();
-            cb.addTemplate(totalPagesTemplate, rightMargin - 10f, pageY);
+            cb.addTemplate(totalPagesTemplate, rightMargin - 8f, pageY);
 
             // 3. Bottom Footer Bar (Teal Banner with Locations & Map Pin)
-            float barY = document.bottom() - 36f;
-            float barHeight = 24f;
-            float totalWidth = rightMargin - leftMargin + 20f;
+            float barY = document.bottom() - 38f;
+            float barHeight = 26f;
+            float totalWidth = rightMargin - leftMargin + 24f;
 
             cb.setColorFill(TEAL_PRIMARY);
-            cb.rectangle(leftMargin - 10f, barY, totalWidth, barHeight);
-            cb.fill();
-
-            // Location Pin Icon Box
-            cb.setColorFill(CYAN_ACCENT);
-            cb.circle(leftMargin + 6f, barY + 12f, 8f);
+            cb.rectangle(leftMargin - 12f, barY, totalWidth, barHeight);
             cb.fill();
 
             // White text inside footer bar
             cb.beginText();
             cb.setColorFill(Color.WHITE);
 
-            // "Find us on" above pin
-            cb.setFontAndSize(baseFont, 5.5f);
-            cb.showTextAligned(Element.ALIGN_CENTER, "Find us on", leftMargin + 6f, barY + 18f, 0);
-            // Pin marker
-            cb.setFontAndSize(boldFont, 7f);
-            cb.showTextAligned(Element.ALIGN_CENTER, "⚲", leftMargin + 6f, barY + 8f, 0);
+            // Location Pin Icon circle
+            cb.setFontAndSize(boldFont, 8f);
+            cb.showTextAligned(Element.ALIGN_CENTER, "⚲", leftMargin + 4f, barY + 11f, 0);
+
+            // "Find us on" text
+            cb.setFontAndSize(baseFont, 5.8f);
+            cb.showTextAligned(Element.ALIGN_CENTER, "Find us on", leftMargin + 4f, barY + 19f, 0);
 
             // Title: Labrox Diagnostics Pvt. Ltd.
-            cb.setFontAndSize(boldFont, 9.5f);
-            cb.showTextAligned(Element.ALIGN_CENTER, "Labrox Diagnostics Pvt. Ltd.", (leftMargin + rightMargin) / 2f + 10f, barY + 14f, 0);
+            cb.setFontAndSize(boldFont, 10f);
+            cb.showTextAligned(Element.ALIGN_CENTER, "Labrox Diagnostics Pvt. Ltd.", (leftMargin + rightMargin) / 2f + 10f, barY + 16f, 0);
 
             // Address Line 1
-            cb.setFontAndSize(baseFont, 6.2f);
-            cb.showTextAligned(Element.ALIGN_CENTER, "Regional Lab Siliguri - 1st Floor, Mudhar Arcade, Guru Nanak Sarani-3, Punjabi Para, Siliguri, Pincode : 734001", (leftMargin + rightMargin) / 2f + 10f, barY + 7f, 0);
+            cb.setFontAndSize(baseFont, 6.4f);
+            cb.showTextAligned(Element.ALIGN_CENTER, "Regional Lab Siliguri - 1st Floor, Mudhar Arcade, Guru Nanak Sarani-3, Punjabi Para, Siliguri, Pincode : 734001", (leftMargin + rightMargin) / 2f + 10f, barY + 9f, 0);
 
             // Address Line 2
-            cb.showTextAligned(Element.ALIGN_CENTER, "Central Lab - New Delhi, Other Regional Labs - J&K | Haryana | Rajasthan | U.P. | Maharashtra | Kolkata", (leftMargin + rightMargin) / 2f + 10f, barY + 1f, 0);
+            cb.showTextAligned(Element.ALIGN_CENTER, "Central Lab - New Delhi, Other Regional Labs - J&K | Haryana | Rajasthan | U.P. | Maharashtra | Kolkata", (leftMargin + rightMargin) / 2f + 10f, barY + 2.5f, 0);
             cb.endText();
         }
 
         @Override
         public void onCloseDocument(PdfWriter writer, Document document) {
             totalPagesTemplate.beginText();
-            totalPagesTemplate.setFontAndSize(baseFont, 7.8f);
+            totalPagesTemplate.setFontAndSize(baseFont, 7.5f);
             totalPagesTemplate.setColorFill(TEXT_BLACK);
             totalPagesTemplate.setTextMatrix(0, 0);
             totalPagesTemplate.showText(String.valueOf(writer.getPageNumber()));
