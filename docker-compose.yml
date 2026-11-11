@@ -1,0 +1,84 @@
+﻿version: '3.8'
+
+services:
+  labrox-postgres:
+    image: postgres:16-alpine
+    container_name: labrox-postgres
+    environment:
+      POSTGRES_USER: labrox_admin
+      POSTGRES_PASSWORD: LabRoxSecurePassword2026!
+      POSTGRES_DB: labrox_lims
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U labrox_admin -d labrox_lims"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  labrox-redis:
+    image: redis:7-alpine
+    container_name: labrox-redis
+    command: redis-server --requirepass LabRoxRedisSecure2026!
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  labrox-kafka:
+    image: confluentinc/cp-kafka:7.7.0
+    container_name: labrox-kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://labrox-kafka:29092,PLAINTEXT_HOST://localhost:9092'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@labrox-kafka:29093'
+      KAFKA_LISTENERS: 'PLAINTEXT://0.0.0.0:29092,CONTROLLER://0.0.0.0:29093,PLAINTEXT_HOST://0.0.0.0:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'PLAINTEXT'
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+      CLUSTER_ID: 'MkU3OEVBNTcwNTJENDM2Qk'
+
+  labrox-opensearch:
+    image: opensearchproject/opensearch:2.15.0
+    container_name: labrox-opensearch
+    environment:
+      - cluster.name=labrox-cluster
+      - node.name=labrox-node1
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+      - DISABLE_SECURITY_PLUGIN=true
+    ports:
+      - "9200:9200"
+      - "9600:9600"
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+
+  labrox-minio:
+    image: minio/minio:latest
+    container_name: labrox-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: labrox_s3_admin
+      MINIO_ROOT_PASSWORD: LabRoxS3SecretKey2026!
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
+  opensearch_data:
+  minio_data:
