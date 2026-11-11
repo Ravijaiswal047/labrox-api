@@ -1,0 +1,7964 @@
+{
+  "globals": [
+    {
+      "FieldID": 233,
+      "FieldType": null,
+      "FieldDisplay": null,
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 364,
+      "FieldType": null,
+      "FieldDisplay": "A Positive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 250,
+      "FieldType": null,
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 252,
+      "FieldType": "",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 251,
+      "FieldType": "",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 309,
+      "FieldType": "435",
+      "FieldDisplay": "ABCrer12324",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 282,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "asdf",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 17,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "Data",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 42,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "Data(new)",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 181,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "DataTest",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 16,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "Investigation news",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 70,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "Investigation newss",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 48,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "No Data",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 20,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "No Data(new)",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 18,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "No Data1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 19,
+      "FieldType": "AutoConsume",
+      "FieldDisplay": "Observation Wise old",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 234,
+      "FieldType": "BankName",
+      "FieldDisplay": "",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 267,
+      "FieldType": "BankName",
+      "FieldDisplay": "asd",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 140,
+      "FieldType": "BankName",
+      "FieldDisplay": "BANK OF BARODA",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 139,
+      "FieldType": "BankName",
+      "FieldDisplay": "BANK OF INDIA",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 108,
+      "FieldType": "BankName",
+      "FieldDisplay": "BANK OF PUNJAB",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 74,
+      "FieldType": "BankName",
+      "FieldDisplay": "BANK OF PUNJAB3",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 114,
+      "FieldType": "BankName",
+      "FieldDisplay": "CANARA BANK",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 116,
+      "FieldType": "BankName",
+      "FieldDisplay": "HDFC BANK",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 115,
+      "FieldType": "BankName",
+      "FieldDisplay": "ICICI BANK",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 149,
+      "FieldType": "BankName",
+      "FieldDisplay": "Itdose111",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 443,
+      "FieldType": "BankName",
+      "FieldDisplay": "Kotak Mahindra Bank",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 1063,
+      "FieldType": "BankName",
+      "FieldDisplay": "IDFC",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 183,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "FamilyPackage",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 147,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "OutSource",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 148,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "Package",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 176,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "Platinum",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 120,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "ROUTINE",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 146,
+      "FieldType": "BillingCategory",
+      "FieldDisplay": "Special",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 813,
+      "FieldType": "BillingRemarks",
+      "FieldDisplay": "Payment Issue",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 10001
+    },
+    {
+      "FieldID": 809,
+      "FieldType": "BillingRemarks",
+      "FieldDisplay": "Wrong Age",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 10001
+    },
+    {
+      "FieldID": 315,
+      "FieldType": "BillingType",
+      "FieldDisplay": "Half Yearly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 313,
+      "FieldType": "BillingType",
+      "FieldDisplay": "Monthly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 314,
+      "FieldType": "BillingType",
+      "FieldDisplay": "Quaterly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 316,
+      "FieldType": "BillingType",
+      "FieldDisplay": "Yearly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 327,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "A Negative",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 326,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "A Positive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 331,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "AB Negative",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 330,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "AB Positive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 329,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "B Negative",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 328,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "B Positive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 333,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "O Negative",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 332,
+      "FieldType": "BloodGROUP",
+      "FieldDisplay": "O Positive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 97,
+      "FieldType": "Centre",
+      "FieldDisplay": "1000 - PREET DIAGNOS",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 107,
+      "FieldType": "Centre",
+      "FieldDisplay": "1001 - SURYA KIDNEY",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 121,
+      "FieldType": "Centre",
+      "FieldDisplay": "1002 - GENESIS CLINI",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 133,
+      "FieldType": "Centre",
+      "FieldDisplay": "1003 - KANCHAN DIAGN",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 122,
+      "FieldType": "Centre",
+      "FieldDisplay": "1004 - JAI AMBIKA ME",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 144,
+      "FieldType": "Centre",
+      "FieldDisplay": "1005 - KRISHNA DIAGN",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 143,
+      "FieldType": "Centre",
+      "FieldDisplay": "1006 - KAUSHAL HOSPI",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 142,
+      "FieldType": "Centre",
+      "FieldDisplay": "1007 - TARLOCHAN SIN",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 199,
+      "FieldType": "Centre",
+      "FieldDisplay": "test centre",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 105,
+      "FieldType": "CentreType",
+      "FieldDisplay": "Booking",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 106,
+      "FieldType": "CentreType",
+      "FieldDisplay": "Processing Lab",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 191,
+      "FieldType": "Color",
+      "FieldDisplay": "Green",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 174,
+      "FieldType": "Color",
+      "FieldDisplay": "red",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 25,
+      "FieldType": "Custom",
+      "FieldDisplay": "Centre",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 26,
+      "FieldType": "Custom",
+      "FieldDisplay": "Financial Year",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 34,
+      "FieldType": "Degree",
+      "FieldDisplay": "(BDS) Gold Medalist",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 22,
+      "FieldType": "Degree",
+      "FieldDisplay": "B.SC MBBS",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 454,
+      "FieldType": "delhi",
+      "FieldDisplay": "abcs",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 571,
+      "FieldType": "delhi",
+      "FieldDisplay": "j",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 455,
+      "FieldType": "delhi new",
+      "FieldDisplay": "qqq",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 1026,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "MembershipCard",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1031,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "OneDepartmentCategory",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1027,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "OPD Consultation",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1025,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "Package",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1023,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "Pathology",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1024,
+      "FieldType": "DepartmentCategory",
+      "FieldDisplay": "Radiology",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1049,
+      "FieldType": "Deposite Type",
+      "FieldDisplay": "TDS",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 113,
+      "FieldType": "Designation",
+      "FieldDisplay": "Area Head",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 103,
+      "FieldType": "Designation",
+      "FieldDisplay": "ASM",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 102,
+      "FieldType": "Designation",
+      "FieldDisplay": "BusinessHead",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 101,
+      "FieldType": "Designation",
+      "FieldDisplay": "Doctor",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 100,
+      "FieldType": "Designation",
+      "FieldDisplay": "Lab Technician1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 129,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "BPL Card Discount",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 136,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "Camp Discount",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 127,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "Doctor Discount",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 441,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "Gov Scheme",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 126,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "Management Discount",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 128,
+      "FieldType": "DiscountReason",
+      "FieldDisplay": "Sr. Citizen Discount",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 33,
+      "FieldType": "DiscountShareType",
+      "FieldDisplay": "Both",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 31,
+      "FieldType": "DiscountShareType",
+      "FieldDisplay": "Client Share",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 32,
+      "FieldType": "DiscountShareType",
+      "FieldDisplay": "Lab Share",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 572,
+      "FieldType": "DiscountShareType",
+      "FieldDisplay": "tt",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 1084,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1086,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Dengue Fever",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1087,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Diabetes Mellitus",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1082,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Epilepsy",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1019,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Hypertensive disorders",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1020,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Ischemic heart diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1083,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Migraine",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1081,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Stroke",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1085,
+      "FieldType": "Disease Mapping",
+      "FieldDisplay": "Tuberculosis",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1030,
+      "FieldType": "DoctorDepartment",
+      "FieldDisplay": "Doctor Dep",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1029,
+      "FieldType": "DoctorDepartment",
+      "FieldDisplay": "DoctorHEllo",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 211,
+      "FieldType": "DocumentName",
+      "FieldDisplay": "Adhaar Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 213,
+      "FieldType": "DocumentName",
+      "FieldDisplay": "PAN Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 837,
+      "FieldType": "dummy",
+      "FieldDisplay": "not found",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 836,
+      "FieldType": "dummy",
+      "FieldDisplay": "sample not found",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 36,
+      "FieldType": "EmailFor",
+      "FieldDisplay": "Client",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 45,
+      "FieldType": "EmailFor",
+      "FieldDisplay": "Patient",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 39,
+      "FieldType": "EmailType",
+      "FieldDisplay": "Patient Bill Email",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 37,
+      "FieldType": "EmailType",
+      "FieldDisplay": "Patiient Lab Report",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 38,
+      "FieldType": "EmailType",
+      "FieldDisplay": "Registration Email",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 977,
+      "FieldType": "ESGIncident",
+      "FieldDisplay": "Critical Equipment Failure",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 976,
+      "FieldType": "ESGIncident",
+      "FieldDisplay": "Environmental Spill",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 975,
+      "FieldType": "ESGIncident",
+      "FieldDisplay": "Security Breach",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 974,
+      "FieldType": "ESGIncident",
+      "FieldDisplay": "Workplace Injury",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 286,
+      "FieldType": "FieldBBBoy",
+      "FieldDisplay": "sahil kumar",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 285,
+      "FieldType": "FieldBBBoy",
+      "FieldDisplay": "sahil kumar",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 219,
+      "FieldType": "Gender",
+      "FieldDisplay": "Both",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 197,
+      "FieldType": "Gender",
+      "FieldDisplay": "Female",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 172,
+      "FieldType": "Gender",
+      "FieldDisplay": "Male",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 295,
+      "FieldType": "Gender",
+      "FieldDisplay": "Other",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1045,
+      "FieldType": "Gender",
+      "FieldDisplay": "Transgender",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 318,
+      "FieldType": "GraceType",
+      "FieldDisplay": "0",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 319,
+      "FieldType": "GraceType",
+      "FieldDisplay": "1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 320,
+      "FieldType": "GraceType",
+      "FieldDisplay": "2",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 321,
+      "FieldType": "GraceType",
+      "FieldDisplay": "3",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 322,
+      "FieldType": "GraceType",
+      "FieldDisplay": "4",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 323,
+      "FieldType": "GraceType",
+      "FieldDisplay": "5",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 324,
+      "FieldType": "GraceType",
+      "FieldDisplay": "6",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 325,
+      "FieldType": "GraceType",
+      "FieldDisplay": "7",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1002,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Alcohol Consumption",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1091,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Beedi Smoking",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1090,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Betel Nut Chewing",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1089,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Caffeine Intake",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1092,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Gutkha Consumption",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1093,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Pan Masala",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1001,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Smoking",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1004,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Tobacco Chewing",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1088,
+      "FieldType": "Habits Mapping",
+      "FieldDisplay": "Vaping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1006,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Cancers and tumors",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1007,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Cardiovascular diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1009,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Digestive system diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1096,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Eye Disorders",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1097,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Immune System Disorders",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1005,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Infectious & parasitic diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1098,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Mental Health Disorders",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1094,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Musculoskeletal Disorders",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1008,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Respiratory diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1095,
+      "FieldType": "Health Conditions Mapping",
+      "FieldDisplay": "Skin Diseases",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 235,
+      "FieldType": "Hello",
+      "FieldDisplay": "Hi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 311,
+      "FieldType": "Hello",
+      "FieldDisplay": "sahil testing",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 253,
+      "FieldType": "Helloq",
+      "FieldDisplay": "Hi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 254,
+      "FieldType": "Helloqy",
+      "FieldDisplay": "Hi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 453,
+      "FieldType": "HLMPatientType",
+      "FieldDisplay": "ICU",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 451,
+      "FieldType": "HLMPatientType",
+      "FieldDisplay": "IPD",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 452,
+      "FieldType": "HLMPatientType",
+      "FieldDisplay": "OPD",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 80,
+      "FieldType": "Identity",
+      "FieldDisplay": "Aadhaar Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 77,
+      "FieldType": "Identity",
+      "FieldDisplay": "Card No.",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 78,
+      "FieldType": "Identity",
+      "FieldDisplay": "DL No.",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 47,
+      "FieldType": "Identity",
+      "FieldDisplay": "Pan Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 76,
+      "FieldType": "Identity",
+      "FieldDisplay": "Passport No.",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 440,
+      "FieldType": "Identity",
+      "FieldDisplay": "Ration Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 79,
+      "FieldType": "Identity",
+      "FieldDisplay": "Voter Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1038,
+      "FieldType": "Identity",
+      "FieldDisplay": "AB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1021,
+      "FieldType": "Identity",
+      "FieldDisplay": "Citizenship Card",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1064,
+      "FieldType": "Identity",
+      "FieldDisplay": "Doctor Prescription",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1037,
+      "FieldType": "Identity",
+      "FieldDisplay": "National ID",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 163,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Barcode",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 164,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "BarcodeBST",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 216,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "BillNo",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 527,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Camp",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 486,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "DoctorCode",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 456,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "EmployeeCode",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 161,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Lab No",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 526,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Membership Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 530,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "MemberShipCardNo",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 162,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Patient ID",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 171,
+      "FieldType": "IDMaster",
+      "FieldDisplay": "Receipt No",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 212,
+      "FieldType": "InvestigationType",
+      "FieldDisplay": "Package",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 189,
+      "FieldType": "InvestigationType",
+      "FieldDisplay": "Profile",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 188,
+      "FieldType": "InvestigationType",
+      "FieldDisplay": "Test",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 823,
+      "FieldType": "InvoiceBillingCycle",
+      "FieldDisplay": "15 Days",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 824,
+      "FieldType": "InvoiceBillingCycle",
+      "FieldDisplay": "Monthly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 822,
+      "FieldType": "InvoiceBillingCycle",
+      "FieldDisplay": "Weekly",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 958,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Advice - Kindly get Anti-TPO tested for further diagnosis. ",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 956,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "AFB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 937,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Age required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 930,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Clinical History required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 934,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Clotted sample",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 965,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Confirm age",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 944,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Confirm Gender",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 959,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Confirm sample type kidney stone or gall bladder",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 941,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "DOB,Required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 942,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "DOB,Wt,LMP,USG Required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 951,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Dr No. Required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 946,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Gest.Age is less?",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 945,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Gest.Age is more?",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 932,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Hemolyzed Sample",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 966,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "HIGH HB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 955,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "History of blood transfusion",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 962,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "History Received ",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 947,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "In Dilution",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 933,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Insufficient quantity of sample received",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 970,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Kindly send a repeat sample. to attempt further cytogenetic analysis",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 963,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Lipemic sample.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 964,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "LOW HB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 950,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "More History Required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 971,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "No Metaphase seen",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 935,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Please Send Fresh Sample",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 957,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Quantity Not Suficient(QNS)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 949,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Repeat Sample Received",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 960,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Repeat sample recevid",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 969,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Repeat sample required to attempt further cytogenetic.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 936,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Report will be released tomorrow",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 952,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Rerun",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 940,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Sample leaked",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 961,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Sample on hold till history not recevied ",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 931,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Sample received 48hrs post aspiration",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 929,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Sample Rejected",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 967,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "SAMPLE RUN IN DILUTION OF 1:10",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 968,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "SAMPLE RUN IN DILUTION OF 1:100",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 954,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "SIR",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 953,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "SLIDE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 939,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Type of sample",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 943,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "USG Required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 972,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Usg, Adharcard & maternal report required.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 938,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Volume required",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 948,
+      "FieldType": "LabRemarks",
+      "FieldDisplay": "Wrong barcode pasting",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 169,
+      "FieldType": "Length List",
+      "FieldDisplay": "000001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 168,
+      "FieldType": "Length List",
+      "FieldDisplay": "00001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 167,
+      "FieldType": "Length List",
+      "FieldDisplay": "0001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 166,
+      "FieldType": "Length List",
+      "FieldDisplay": "001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 7,
+      "FieldType": "Locality",
+      "FieldDisplay": "Sector 1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 6,
+      "FieldType": "Locality",
+      "FieldDisplay": "Sector 2",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 425,
+      "FieldType": "LogisticTemperature",
+      "FieldDisplay": "2 to 8 °C",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 184,
+      "FieldType": "LogisticTemperature",
+      "FieldDisplay": "Dry Ice",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 138,
+      "FieldType": "LogisticTemperature",
+      "FieldDisplay": "Frozen",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 137,
+      "FieldType": "LogisticTemperature",
+      "FieldDisplay": "Room Temp",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 812,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Bp",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 811,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Heart Attack",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 992,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Allergies",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 988,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Cardiovascular Disease",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 987,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Chronic Kidney Disease",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 984,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Diabetes Mellitus",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 985,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Hypertension",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 990,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Infectious Disease",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 991,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Medication History",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 989,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Oncology (Cancer)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 993,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Pregnancy/Lactation",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1033,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Sample History",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 986,
+      "FieldType": "MedicalHistory",
+      "FieldDisplay": "Thyroid Disorder",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 797,
+      "FieldType": "MH",
+      "FieldDisplay": "bp",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 798,
+      "FieldType": "MH",
+      "FieldDisplay": "sugar",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 92,
+      "FieldType": "MicroReportType",
+      "FieldDisplay": "Preliminary",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 91,
+      "FieldType": "MicroReportType",
+      "FieldDisplay": "Preliminary1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 89,
+      "FieldType": "MicroReportType",
+      "FieldDisplay": "Preliminary2",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 257,
+      "FieldType": "Mis",
+      "FieldDisplay": "MIS Dis",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 256,
+      "FieldType": "Mis",
+      "FieldDisplay": "MIS Dis",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 255,
+      "FieldType": "Mis",
+      "FieldDisplay": "MIS Dis",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 249,
+      "FieldType": "Mis",
+      "FieldDisplay": "MIS Dis",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 258,
+      "FieldType": "Mis12",
+      "FieldDisplay": "MIS Dis1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 292,
+      "FieldType": "MyField",
+      "FieldDisplay": "MyDisplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 291,
+      "FieldType": "MyField1",
+      "FieldDisplay": "MyDisplay1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 290,
+      "FieldType": "MyField2",
+      "FieldDisplay": "MyDisplay2",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1016,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Arteris",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1107,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Bones",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1018,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Capillaries",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1105,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Gallbladder",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1015,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Heart",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1108,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Reproductive Organs",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1106,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Skin",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1103,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Thyroid Gland",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1104,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Urinary Bladder",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1017,
+      "FieldType": "Organ Mapping",
+      "FieldDisplay": "Veins",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 21,
+      "FieldType": "PageOrientation",
+      "FieldDisplay": "Landscape",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 12,
+      "FieldType": "PageOrientation",
+      "FieldDisplay": "Portrait",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1057,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Age",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1061,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Area",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1052,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Card Number",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1055,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Centre",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1051,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Collection Type",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1059,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "DOB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1058,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Gender",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1053,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Lab No",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1060,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Mobile",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1056,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "PName",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1054,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Reg No",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1062,
+      "FieldType": "PatientCustomReportColumn",
+      "FieldDisplay": "Zone",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 980,
+      "FieldType": "PatientRequestPurpose",
+      "FieldDisplay": "Doctor Referral",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 981,
+      "FieldType": "PatientRequestPurpose",
+      "FieldDisplay": "Follow-up / Monitoring",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 979,
+      "FieldType": "PatientRequestPurpose",
+      "FieldDisplay": "Routine Check-up",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 110,
+      "FieldType": "PatientType",
+      "FieldDisplay": "Corporate",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 111,
+      "FieldType": "PatientType",
+      "FieldDisplay": "HLM",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 61,
+      "FieldType": "PatientType",
+      "FieldDisplay": "PUP",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 109,
+      "FieldType": "PatientType",
+      "FieldDisplay": "Walk-In",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 134,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Cash",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 145,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Cheque",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 215,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Credit",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 135,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Credit Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 5,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Debit Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 442,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Internet Banking",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 124,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Online Payment",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 123,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "Paytm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 831,
+      "FieldType": "PaymentMode",
+      "FieldDisplay": "WriteOff",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 241,
+      "FieldType": "Pddds1",
+      "FieldDisplay": "MDdisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 244,
+      "FieldType": "Pddds123",
+      "FieldDisplay": "MDdis333dplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 243,
+      "FieldType": "Pddds123",
+      "FieldDisplay": "MDdis333dplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 242,
+      "FieldType": "Pddds123",
+      "FieldDisplay": "MDdis333dplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 130,
+      "FieldType": "Phlebotomist",
+      "FieldDisplay": "Ankit",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 131,
+      "FieldType": "Phlebotomist",
+      "FieldDisplay": "Brijesh",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 132,
+      "FieldType": "Phlebotomist",
+      "FieldDisplay": "Sunil",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 231,
+      "FieldType": "POP",
+      "FieldDisplay": "MyDisplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 232,
+      "FieldType": "POP",
+      "FieldDisplay": "MyDisplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 240,
+      "FieldType": "POPdddds1",
+      "FieldDisplay": "MyDdisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 239,
+      "FieldType": "POPdddds1",
+      "FieldDisplay": "MyDdisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 238,
+      "FieldType": "POPdddds1",
+      "FieldDisplay": "MyDdisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 237,
+      "FieldType": "POPdddds1",
+      "FieldDisplay": "MyDisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 236,
+      "FieldType": "POPs1",
+      "FieldDisplay": "MyDisdplay",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 417,
+      "FieldType": "ProcessingType",
+      "FieldDisplay": "InHouse",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 418,
+      "FieldType": "ProcessingType",
+      "FieldDisplay": "OutHouse",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 248,
+      "FieldType": "R",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 245,
+      "FieldType": "Rahul",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 246,
+      "FieldType": "Rahul",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 247,
+      "FieldType": "Rahul verma",
+      "FieldDisplay": "API",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 14,
+      "FieldType": "RangeType",
+      "FieldDisplay": "Normal",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 266,
+      "FieldType": "RateType",
+      "FieldDisplay": "1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 62,
+      "FieldType": "RateType",
+      "FieldDisplay": "No Rate Type",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 214,
+      "FieldType": "RefundReason",
+      "FieldDisplay": "Test Cancelled",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 230,
+      "FieldType": "RejectReason",
+      "FieldDisplay": "Clotted Sample",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 29,
+      "FieldType": "RejectReason",
+      "FieldDisplay": "Sample Not Received",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 218,
+      "FieldType": "ReportDeliveryMethod",
+      "FieldDisplay": "To Patient",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 117,
+      "FieldType": "ReportType",
+      "FieldDisplay": "Histo Report",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 198,
+      "FieldType": "ReportType",
+      "FieldDisplay": "Memo",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 190,
+      "FieldType": "ReportType",
+      "FieldDisplay": "Numeric",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 186,
+      "FieldType": "ReportType",
+      "FieldDisplay": "Path Numeric",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 175,
+      "FieldType": "ReportType",
+      "FieldDisplay": "Path RichText",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 94,
+      "FieldType": "ReportType",
+      "FieldDisplay": "report",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 8,
+      "FieldType": "ReportType1",
+      "FieldDisplay": "Bill",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1,
+      "FieldType": "ReportType1",
+      "FieldDisplay": "Lab Report1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 229,
+      "FieldType": "ReportType1",
+      "FieldDisplay": "TRF",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 90,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Aadhaar Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 51,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Address Proof",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 56,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Pan Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 65,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Patient ID Proof",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 445,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Ration Card",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 995,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Clinical History",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 994,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Consent Form",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1065,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Doctor Prescription",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 982,
+      "FieldType": "RequiredAttachment",
+      "FieldDisplay": "Ultrasound Report",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 209,
+      "FieldType": "RequiredFields",
+      "FieldDisplay": "CRL",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 207,
+      "FieldType": "RequiredFields",
+      "FieldDisplay": "Height",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 210,
+      "FieldType": "RequiredFields",
+      "FieldDisplay": "NT",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 208,
+      "FieldType": "RequiredFields",
+      "FieldDisplay": "Weight",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 204,
+      "FieldType": "ReRun Reason",
+      "FieldDisplay": "High Value",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 205,
+      "FieldType": "ReRun Reason",
+      "FieldDisplay": "Low Value",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1035,
+      "FieldType": "SampleBy",
+      "FieldDisplay": "SampleByCourier",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1036,
+      "FieldType": "SampleBy",
+      "FieldDisplay": "SampleBySelf",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 152,
+      "FieldType": "SampleCondition",
+      "FieldDisplay": "Collected",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 151,
+      "FieldType": "SampleCondition",
+      "FieldDisplay": "NotCollected",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 27,
+      "FieldType": "SampleCondition",
+      "FieldDisplay": "Rejected",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 58,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "Normal",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1074,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "24Hrs URINE CONTAINER",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1073,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "30ML URINE CONTAINER",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1066,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "Demo",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1069,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "GRAY FLORIDE TUBE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1077,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "GREE CAP BLOOD C/S BOTTEL",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1071,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "GREEN SODIUM HEPARIN",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1075,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "HEPARIN SYRINGE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1070,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "LAVENDER/PURPLE EDTA TUBE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1067,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "RED PLAN TUBE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1072,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "SKYBLUE SODIUM CITRATE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1080,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "STERILE CONTAINER",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1076,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "STERILE SWAB",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1079,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "VTM TUBE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1068,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "YELLOW PLAIN TUBE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1078,
+      "FieldType": "SampleContainer",
+      "FieldDisplay": "YELLOWCAP BLOOD C/S BOTTLE",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 180,
+      "FieldType": "SampleOption",
+      "FieldDisplay": "Sample Not Required",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 179,
+      "FieldType": "SampleOption",
+      "FieldDisplay": "Sample Required",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 87,
+      "FieldType": "SampleType",
+      "FieldDisplay": "ARTERIAL LINE",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 86,
+      "FieldType": "SampleType",
+      "FieldDisplay": "ASCITIC FLUID",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 85,
+      "FieldType": "SampleType",
+      "FieldDisplay": "BODY FLUID",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 50,
+      "FieldType": "SampleType",
+      "FieldDisplay": "BONE MARROW HEPARIN",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 93,
+      "FieldType": "SampleType",
+      "FieldDisplay": "BUCCAL SMEAR",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 275,
+      "FieldType": "SampleType",
+      "FieldDisplay": "delhi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 274,
+      "FieldType": "SampleType",
+      "FieldDisplay": "delhi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 273,
+      "FieldType": "SampleType",
+      "FieldDisplay": "delhi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 269,
+      "FieldType": "SampleType",
+      "FieldDisplay": "ebv",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 265,
+      "FieldType": "SampleType",
+      "FieldDisplay": "gender33",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 279,
+      "FieldType": "SampleType",
+      "FieldDisplay": "hello",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 88,
+      "FieldType": "SampleType",
+      "FieldDisplay": "LEG",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 281,
+      "FieldType": "saturday",
+      "FieldDisplay": "1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 158,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "--Select--",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 157,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "BarcodeNo",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 200,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "Mobile",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 156,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "PatientCode",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 155,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "PatientName",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 201,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "SelectType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 154,
+      "FieldType": "SelectOption",
+      "FieldDisplay": "VisitNo",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 268,
+      "FieldType": "SelectType",
+      "FieldDisplay": "abc",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 272,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 270,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 261,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 271,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 287,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 293,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Atul11",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 177,
+      "FieldType": "SelectType",
+      "FieldDisplay": "AutoConsume",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 141,
+      "FieldType": "SelectType",
+      "FieldDisplay": "BankName",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 118,
+      "FieldType": "SelectType",
+      "FieldDisplay": "BillingCategory",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 808,
+      "FieldType": "SelectType",
+      "FieldDisplay": "BillingRemarks",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 312,
+      "FieldType": "SelectType",
+      "FieldDisplay": "BillingType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 98,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Centre",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 104,
+      "FieldType": "SelectType",
+      "FieldDisplay": "CentreType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 196,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Color",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 75,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Custom",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 24,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Degree",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 277,
+      "FieldType": "SelectType",
+      "FieldDisplay": "delhi",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 278,
+      "FieldType": "SelectType",
+      "FieldDisplay": "delhi new",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 112,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Designation",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 30,
+      "FieldType": "SelectType",
+      "FieldDisplay": "DiscountShareType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 81,
+      "FieldType": "SelectType",
+      "FieldDisplay": "DocumentName",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 35,
+      "FieldType": "SelectType",
+      "FieldDisplay": "EmailFor",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 284,
+      "FieldType": "SelectType",
+      "FieldDisplay": "FieldBBBoy",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 283,
+      "FieldType": "SelectType",
+      "FieldDisplay": "FieldBBoy",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 173,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Gender",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 317,
+      "FieldType": "SelectType",
+      "FieldDisplay": "GraceType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 310,
+      "FieldType": "SelectType",
+      "FieldDisplay": "hello",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 450,
+      "FieldType": "SelectType",
+      "FieldDisplay": "HLMPatientType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 160,
+      "FieldType": "SelectType",
+      "FieldDisplay": "IDMaster",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 165,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Length List",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 15,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Locality",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 182,
+      "FieldType": "SelectType",
+      "FieldDisplay": "LogisticTemperature",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 810,
+      "FieldType": "SelectType",
+      "FieldDisplay": "MedicalHistory",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 796,
+      "FieldType": "SelectType",
+      "FieldDisplay": "MH",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 72,
+      "FieldType": "SelectType",
+      "FieldDisplay": "MicroReportType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 260,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Naman",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 10,
+      "FieldType": "SelectType",
+      "FieldDisplay": "PageOrientation",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 119,
+      "FieldType": "SelectType",
+      "FieldDisplay": "PatientType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 416,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ProcessingType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 13,
+      "FieldType": "SelectType",
+      "FieldDisplay": "RangeType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 28,
+      "FieldType": "SelectType",
+      "FieldDisplay": "RejectReason",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 217,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ReportDeliveryMethod",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 192,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ReportType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 2,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ReportType1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 49,
+      "FieldType": "SelectType",
+      "FieldDisplay": "RequiredAttachment",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 206,
+      "FieldType": "SelectType",
+      "FieldDisplay": "RequiredFields",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 203,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ReRun Reason",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 99,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SalesManager",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 150,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SampleCondition",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 125,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SampleContainer",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 178,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SampleOption",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 83,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SampleType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 280,
+      "FieldType": "SelectType",
+      "FieldDisplay": "saturday",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 294,
+      "FieldType": "SelectType",
+      "FieldDisplay": "saturday1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 153,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SelectOption",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 202,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SelectType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 519,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Sensitivity",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 537,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Sensitivity2",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 170,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Separator",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 40,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Specialization",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 419,
+      "FieldType": "SelectType",
+      "FieldDisplay": "TATType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 366,
+      "FieldType": "SelectType",
+      "FieldDisplay": "TimeZone",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 224,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Title",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 222,
+      "FieldType": "SelectType",
+      "FieldDisplay": "TITTLE",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 296,
+      "FieldType": "SelectType",
+      "FieldDisplay": "typeLength",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 9,
+      "FieldType": "SelectType",
+      "FieldDisplay": "UserType",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 68,
+      "FieldType": "SelectType",
+      "FieldDisplay": "VisitTypeList",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 187,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Zone",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1022,
+      "FieldType": "SelectType",
+      "FieldDisplay": "DepartmentCategory",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1047,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Deposite Typ",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1048,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Deposite Type",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 999,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Disease Mapping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1028,
+      "FieldType": "SelectType",
+      "FieldDisplay": "DoctorDepartment",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 835,
+      "FieldType": "SelectType",
+      "FieldDisplay": "dummy",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 973,
+      "FieldType": "SelectType",
+      "FieldDisplay": "ESGIncident",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1000,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Habits Mapping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 996,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Health Conditions Mapping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 833,
+      "FieldType": "SelectType",
+      "FieldDisplay": "LabRemarks",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 983,
+      "FieldType": "SelectType",
+      "FieldDisplay": "MedicalHistory",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 998,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Organ Mapping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1050,
+      "FieldType": "SelectType",
+      "FieldDisplay": "PatientCustomReportColumn",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 978,
+      "FieldType": "SelectType",
+      "FieldDisplay": "PatientRequestPurpose",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1034,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SampleBy",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 818,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Sensitivity",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1039,
+      "FieldType": "SelectType",
+      "FieldDisplay": "SMS_Log_Report_Transaction_Type",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 997,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Specialty Mapping",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1003,
+      "FieldType": "SelectType",
+      "FieldDisplay": "Tobacco Chewing",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 263,
+      "FieldType": "SelectType1",
+      "FieldDisplay": "Atul1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 262,
+      "FieldType": "SelectType11",
+      "FieldDisplay": "Atul11",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 264,
+      "FieldType": "SelectType12",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 289,
+      "FieldType": "SelectTypee",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 288,
+      "FieldType": "SeltTyp",
+      "FieldDisplay": "Atul",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 522,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Intermediate",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 521,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Resistant",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 520,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Sensitive",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 820,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Intermediate",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 821,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Resistant",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 819,
+      "FieldType": "Sensitivity",
+      "FieldDisplay": "Sensitive",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 95,
+      "FieldType": "Separator",
+      "FieldDisplay": "-",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 96,
+      "FieldType": "Separator",
+      "FieldDisplay": ".",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 185,
+      "FieldType": "Separator",
+      "FieldDisplay": "/",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1043,
+      "FieldType": "SMS_Log_Report_Transaction_Typ",
+      "FieldDisplay": "Invoice",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1040,
+      "FieldType": "SMS_Log_Report_Transaction_Typ",
+      "FieldDisplay": "LabReport",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1041,
+      "FieldType": "SMS_Log_Report_Transaction_Typ",
+      "FieldDisplay": "OTP",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1042,
+      "FieldType": "SMS_Log_Report_Transaction_Typ",
+      "FieldDisplay": "Receipt",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1044,
+      "FieldType": "SMS_Log_Report_Transaction_Typ",
+      "FieldDisplay": "Remark",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 55,
+      "FieldType": "Source",
+      "FieldDisplay": " Boards/Signage",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 54,
+      "FieldType": "Source",
+      "FieldDisplay": " Online",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 84,
+      "FieldType": "Source",
+      "FieldDisplay": " Others",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 53,
+      "FieldType": "Source",
+      "FieldDisplay": " Samvada magazine",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 69,
+      "FieldType": "Source",
+      "FieldDisplay": "Leaflet/Newspaper",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 57,
+      "FieldType": "Source",
+      "FieldDisplay": "Referral",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 59,
+      "FieldType": "Source",
+      "FieldDisplay": "Website 1",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 23,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Bio Chemist",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 43,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Diabetes",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 41,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Dietician",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 44,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Family Medicine",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 444,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Nurse",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 301,
+      "FieldType": "Specialization",
+      "FieldDisplay": "Testingc",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 1101,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Emergency Medicine",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1102,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "ENT (Otolaryngology)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1100,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Gastroenterology",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1010,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "General Medicine",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1011,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "General Surgery",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1012,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Obstetrics & Gynecology",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1014,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Orthopedics",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1013,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Pediatrics",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1099,
+      "FieldType": "Specialty Mapping",
+      "FieldDisplay": "Psychiatry",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 420,
+      "FieldType": "TATType",
+      "FieldDisplay": "Days",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 421,
+      "FieldType": "TATType",
+      "FieldDisplay": "Hours",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 370,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "1:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 394,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "1:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 371,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "1:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 395,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "1:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 388,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "10:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 412,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "10:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 389,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "10:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 413,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "10:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 390,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "11:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 414,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "11:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 391,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "11:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 415,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "11:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 392,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "12:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 369,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "12:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 393,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "12:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 372,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "2:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 396,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "2:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 373,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "2:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 397,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "2:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 374,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "3:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 398,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "3:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 375,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "3:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 399,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "3:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 376,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "4:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 400,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "4:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 377,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "4:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 401,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "4:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 378,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "5:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 402,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "5:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 379,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "5:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 403,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "5:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 380,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "6:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 404,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "6:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 381,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "6:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 405,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "6:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 382,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "7:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 406,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "7:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 383,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "7:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 407,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "7:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 384,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "8:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 408,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "8:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 385,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "8:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 409,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "8:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 386,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "9:00am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 410,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "9:00pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 387,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "9:30am",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 411,
+      "FieldType": "TimeZone",
+      "FieldDisplay": "9:30pm",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 438,
+      "FieldType": "Title",
+      "FieldDisplay": "",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 535,
+      "FieldType": "Title",
+      "FieldDisplay": "Baby of",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 653,
+      "FieldType": "Title",
+      "FieldDisplay": "D/O",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 826,
+      "FieldType": "Title",
+      "FieldDisplay": "B/0",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 226,
+      "FieldType": "Title",
+      "FieldDisplay": "Baby",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 225,
+      "FieldType": "Title",
+      "FieldDisplay": "Baby.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 827,
+      "FieldType": "Title",
+      "FieldDisplay": "Cat",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 828,
+      "FieldType": "Title",
+      "FieldDisplay": "Dog",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 228,
+      "FieldType": "Title",
+      "FieldDisplay": "Dr.(Miss)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 195,
+      "FieldType": "Title",
+      "FieldDisplay": "Dr.(Mr)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 227,
+      "FieldType": "Title",
+      "FieldDisplay": "Dr.(Mrs)",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 829,
+      "FieldType": "Title",
+      "FieldDisplay": "Master",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 159,
+      "FieldType": "Title",
+      "FieldDisplay": "Miss.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 193,
+      "FieldType": "Title",
+      "FieldDisplay": "Mr.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 194,
+      "FieldType": "Title",
+      "FieldDisplay": "Mrs.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 574,
+      "FieldType": "Title",
+      "FieldDisplay": "Ms.",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 865,
+      "FieldType": "Title",
+      "FieldDisplay": "Other",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1046,
+      "FieldType": "Title",
+      "FieldDisplay": "Transgender",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 1032,
+      "FieldType": "TITTLE",
+      "FieldDisplay": "Dog of",
+      "IsActive": 1,
+      "PrintSequence": 0,
+      "CompanyId": 1006
+    },
+    {
+      "FieldID": 298,
+      "FieldType": "typeLength",
+      "FieldDisplay": "0001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 297,
+      "FieldType": "typeLength",
+      "FieldDisplay": "001",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 534,
+      "FieldType": "typeLength",
+      "FieldDisplay": "01",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 4,
+      "FieldType": "UserType",
+      "FieldDisplay": "Admin",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 795,
+      "FieldType": "UserType",
+      "FieldDisplay": "MH",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 375
+    },
+    {
+      "FieldID": 3,
+      "FieldType": "UserType",
+      "FieldDisplay": "UAT",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 52,
+      "FieldType": "VipMasking",
+      "FieldDisplay": "IsMasking",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 60,
+      "FieldType": "VipMasking",
+      "FieldDisplay": "IsVip",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 302,
+      "FieldType": "VisitType",
+      "FieldDisplay": "1221",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 64,
+      "FieldType": "VisitType",
+      "FieldDisplay": "Center Visit",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 448,
+      "FieldType": "VisitType",
+      "FieldDisplay": "HLM",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 63,
+      "FieldType": "VisitType",
+      "FieldDisplay": "Home Collection",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 66,
+      "FieldType": "VisitTypeList",
+      "FieldDisplay": "Corporate",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 447,
+      "FieldType": "VisitTypeList",
+      "FieldDisplay": "HLM",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 67,
+      "FieldType": "VisitTypeList",
+      "FieldDisplay": "Walk-in",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 565,
+      "FieldType": "Zone",
+      "FieldDisplay": "SouthEast",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 1
+    },
+    {
+      "FieldID": 73,
+      "FieldType": "Zone",
+      "FieldDisplay": "Zone2234",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    },
+    {
+      "FieldID": 46,
+      "FieldType": "Zone",
+      "FieldDisplay": "Zone3",
+      "IsActive": 1,
+      "PrintSequence": 1,
+      "CompanyId": 0
+    }
+  ],
+  "genderMapping": [
+    {
+      "ID": 2,
+      "Title": "Baby.",
+      "Gender": "Male",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 3,
+      "Title": "Baby",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 4,
+      "Title": "Baby of",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 5,
+      "Title": "Cat,D/O",
+      "Gender": "",
+      "IsVetCanine": 1,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 6,
+      "Title": "Dog",
+      "Gender": "",
+      "IsVetCanine": 1,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 7,
+      "Title": "Dr.(Miss)",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 8,
+      "Title": "Dr.(Mr)",
+      "Gender": "Male",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 9,
+      "Title": "Dr.(Mrs)",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 10,
+      "Title": "L",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 11,
+      "Title": "Master",
+      "Gender": "Male",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 12,
+      "Title": "Miss.",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 13,
+      "Title": "Mr.",
+      "Gender": "Male",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 14,
+      "Title": "Mrs.",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 15,
+      "Title": "Ms.",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 16,
+      "Title": "Other",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 17,
+      "Title": "Others",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 18,
+      "Title": "Transgender",
+      "Gender": "Female",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 22,
+      "Title": "Cat",
+      "Gender": "Female",
+      "IsVetCanine": 1,
+      "CompanyID": 999,
+      "isActive": 1
+    },
+    {
+      "ID": 23,
+      "Title": "B/0",
+      "Gender": "Other",
+      "IsVetCanine": 0,
+      "CompanyID": 999,
+      "isActive": 1
+    }
+  ],
+  "centres": [
+    {
+      "CentreID": 1,
+      "Centre": "Nanjappa Multispeciality",
+      "CentreCode": "07",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 1,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 2,
+      "Centre": "NHPL, SHIMOGA",
+      "CentreCode": "NJP-MRP",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 1,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 3,
+      "Centre": "Nanjappa Life Care",
+      "CentreCode": "08",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 1,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 4,
+      "Centre": "Nanjappa Healthcare",
+      "CentreCode": "11",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 1,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 5,
+      "Centre": "Nanjappa Hospitals, Hubli",
+      "CentreCode": "12",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 1,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16647,
+      "Centre": "ADARSH EYE HOSPITAL",
+      "CentreCode": "100",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16648,
+      "Centre": "ADITYA DIAGNOSTICS",
+      "CentreCode": "101",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16649,
+      "Centre": "SIDHANT DIAGNOSTIC SHIMOGA",
+      "CentreCode": "265",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16650,
+      "Centre": "AKASH LABORATORY",
+      "CentreCode": "102",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16655,
+      "Centre": "ASHOKA SANJEEVINI",
+      "CentreCode": "104",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16656,
+      "Centre": "S L N DAYCARE DIAGNOSTICS",
+      "CentreCode": "268",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16657,
+      "Centre": "ASHWINI DIAGNOSTIC CENTER SHIVAMOGGA",
+      "CentreCode": "105",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16659,
+      "Centre": "B POSITIVE LABORATORY BOMMANKATTE",
+      "CentreCode": "107",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16661,
+      "Centre": "MATHRU VAATSALYA HOSPITAL SHIMOGA",
+      "CentreCode": "269",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16662,
+      "Centre": "Dheemahi Child Neurology & Development Centre",
+      "CentreCode": "270",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16663,
+      "Centre": "KADLLI NURSING HOME DVG",
+      "CentreCode": "271",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16664,
+      "Centre": "ARIVU NEURO CLINICAL LABORATORY DAVANAGERE",
+      "CentreCode": "272",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16666,
+      "Centre": "SHREE LABORATORY",
+      "CentreCode": "165",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16667,
+      "Centre": "CARE LABORATORY SHIRALKOPPA",
+      "CentreCode": "109",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16668,
+      "Centre": "SHUSHODHA INSTITUTE OF GASTROENTEROLOGY PVT LTD",
+      "CentreCode": "166",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16672,
+      "Centre": "DEEPAK LABORATORIES SHIVAMOGGA",
+      "CentreCode": "112",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16673,
+      "Centre": "SRI BASAVESHWAR CLINICAL LAB",
+      "CentreCode": "169",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16674,
+      "Centre": "DEVARBHAVIS ENDOCRINE and DIABETIC CENTER",
+      "CentreCode": "113",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16675,
+      "Centre": "SRI BASAVESHWARA POLYCLINIC and LAB SHIKARIPURA",
+      "CentreCode": "170",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16680,
+      "Centre": "SUBBAIAH INSTITUTE OF MEDICAL SCIENCES SHIVAMOGGA",
+      "CentreCode": "173",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16681,
+      "Centre": "GUTTI MALNAD NURSING HOME",
+      "CentreCode": "116",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16682,
+      "Centre": "UNITY CHILDREN HOSPITAL",
+      "CentreCode": "174",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16683,
+      "Centre": "H M DIAGNOSTIC SHIRALKOPPA",
+      "CentreCode": "117",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16686,
+      "Centre": "USHA NURSING",
+      "CentreCode": "176",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16687,
+      "Centre": "V CARE DIAGNOSTIC CHANNAGIRI",
+      "CentreCode": "177",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16691,
+      "Centre": "HRD HEALTHCARE CENTER SHIMOGA",
+      "CentreCode": "121",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16692,
+      "Centre": "VIGNESHWARA CLINICAL LABORATORY SHIVAMOGGA",
+      "CentreCode": "179",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16693,
+      "Centre": "HRUDAYA LAB",
+      "CentreCode": "122",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16694,
+      "Centre": "JEEVAN DIAGNOSTIC",
+      "CentreCode": "123",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16697,
+      "Centre": "VINAYAK HOSPITAL HOSDURGA",
+      "CentreCode": "181",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16698,
+      "Centre": "KIRAN HEALTH CARE LAB (UNIT OF MANIPAL CLINICAL LAB THIRTHAH",
+      "CentreCode": "125",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16700,
+      "Centre": "ANAND LAB",
+      "CentreCode": "188",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16710,
+      "Centre": "MADHU CLINICAL LABORATORY BHADRAVATHI",
+      "CentreCode": "201",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16712,
+      "Centre": "PHERIPHERAL CAMP SHIVAMOGGA",
+      "CentreCode": "208",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16714,
+      "Centre": "MANASA LAB BHADRAVATHI",
+      "CentreCode": "209",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16716,
+      "Centre": "Walkin_Hubali",
+      "CentreCode": "HUBALI-DEMO",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16717,
+      "Centre": "SANVI HI-TECH DIAGNOSTIC CENTER CHANNAGIRI",
+      "CentreCode": "211",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16725,
+      "Centre": "SHREE BASAVESWARA LABORATORY SHIRALKOPPA",
+      "CentreCode": "162",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16727,
+      "Centre": "SRI BASAVESHWAR CLINICAL LABORATORY RAMAGIRI",
+      "CentreCode": "216",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16729,
+      "Centre": "SHIMOGA DIAGNOSTIC CENTRE",
+      "CentreCode": "159",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16733,
+      "Centre": "SARJI SUPER SPECIALITY HOSPITAL",
+      "CentreCode": "156",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16737,
+      "Centre": "ISHA DIAGNOSTIC",
+      "CentreCode": "226",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16740,
+      "Centre": "KRISHNA CLINICAL LABORATORY BHADRAVATHI",
+      "CentreCode": "128",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16744,
+      "Centre": "MALNAD DIAGNOSTIC",
+      "CentreCode": "132",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16746,
+      "Centre": "MANASA NURSING HOME",
+      "CentreCode": "134",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16750,
+      "Centre": "MEDLAB",
+      "CentreCode": "136",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16751,
+      "Centre": "METROUNITED HEALTH CARE",
+      "CentreCode": "137",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16752,
+      "Centre": "SHIVAKUMARS SWASTH HEALTH CARE",
+      "CentreCode": "233",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16755,
+      "Centre": "NAVA SANJEEVINI HOSPITAL",
+      "CentreCode": "139",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16756,
+      "Centre": "NAYANA CLINIC LABORATORY",
+      "CentreCode": "140",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16757,
+      "Centre": "SHOVANA LABORATORY SHIMOGA",
+      "CentreCode": "241",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16759,
+      "Centre": "NU HOSPITAL",
+      "CentreCode": "142",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16760,
+      "Centre": "OM CLINICAL LABORATORY",
+      "CentreCode": "143",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16761,
+      "Centre": "PRASHAMANI HOSPITAL KOPPA",
+      "CentreCode": "144",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16762,
+      "Centre": "PRIME DIAGNOSTIC CENTRE BHADRAVATHI",
+      "CentreCode": "145",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16763,
+      "Centre": "SANGAMA LAB AYANUR",
+      "CentreCode": "243",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16764,
+      "Centre": "RAJKUMAR DIAGNOSTIC",
+      "CentreCode": "146",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16767,
+      "Centre": "SARJI HOSPITAL",
+      "CentreCode": "155",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16769,
+      "Centre": "SAPTGIRI",
+      "CentreCode": "154",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16771,
+      "Centre": "SANJAY DIAGNOSTIC LABORATORIES",
+      "CentreCode": "152",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16772,
+      "Centre": "SANGAMESHWARA LAB SHIKARIPURA",
+      "CentreCode": "151",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16776,
+      "Centre": "SAHYADRI NARAYANA HOSPITAL",
+      "CentreCode": "150",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16778,
+      "Centre": "SAHYADRI HOSPITAL",
+      "CentreCode": "149",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16780,
+      "Centre": "NAVA SRUSHTI SHIMOGA",
+      "CentreCode": "256",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16783,
+      "Centre": "POOJA DIAGNOSTIC CENTRE DAVANAGERE",
+      "CentreCode": "259",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16785,
+      "Centre": "KMC DIAGNOSTICS DAVANGERE",
+      "CentreCode": "260",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16786,
+      "Centre": "AMRUTHA LIFE LINE SHIMOGA",
+      "CentreCode": "263",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16787,
+      "Centre": "MAAX HOSPITAL",
+      "CentreCode": "131",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16796,
+      "Centre": "NANDI DIAGNOSTIC CENTRE",
+      "CentreCode": "282",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16797,
+      "Centre": "Dr . HARSHA HEALTH CARE SHIMOGA",
+      "CentreCode": "283",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16806,
+      "Centre": "NYAMTHI SCANNING and DIAGNOSTIC CENTRE",
+      "CentreCode": "295",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16807,
+      "Centre": "THULASI HOSPITAL, HOSADRUGA",
+      "CentreCode": "296",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16808,
+      "Centre": "Mahaveer Jain Hospital Davangere",
+      "CentreCode": "298",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16809,
+      "Centre": "MARUTUNJAYA HOSPITAL DAVANEGER",
+      "CentreCode": "299",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16811,
+      "Centre": "SUKSHEMA HOSPITAL PVT LTD",
+      "CentreCode": "301",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16814,
+      "Centre": "JP ARADHANA METERNITY CENTRE SHIMOGA",
+      "CentreCode": "304",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16819,
+      "Centre": "SIDDIPRIYA DIAGNOSTIC CENTRE KOTTURU CITY HOSPITAL DAVANGERE",
+      "CentreCode": "312",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16821,
+      "Centre": "NHEL - CITY CENTRAL",
+      "CentreCode": "315",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16822,
+      "Centre": "SAHARA HOSPITAL SHIMOGA",
+      "CentreCode": "317",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16826,
+      "Centre": "Davanagere Childern Health care Center",
+      "CentreCode": "320",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16827,
+      "Centre": "BELAGU HOSPITAL CHANNAGIRI",
+      "CentreCode": "322",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16830,
+      "Centre": "SRUSHTI SPECIALITY HOSPITAL",
+      "CentreCode": "333",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16831,
+      "Centre": "SUDHEENDRA SKIN CARE SHIMOGA",
+      "CentreCode": "334",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16832,
+      "Centre": "PATHCARE LABORATORY LTD",
+      "CentreCode": "335",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16844,
+      "Centre": "GIRI POLY CLINIC SHIMOGA",
+      "CentreCode": "350",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16846,
+      "Centre": "Gayatri Hospital Thirthahalli",
+      "CentreCode": "353",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16847,
+      "Centre": "Anderson Diagnostic Pvt Ltd - SHIVAMOGGA",
+      "CentreCode": "357",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16849,
+      "Centre": "Anderson Diagnostic Pvt Ltd - DAVANAGERE",
+      "CentreCode": "358",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16850,
+      "Centre": "Durga Hospital Bhadravathi - NMSH",
+      "CentreCode": "361",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16851,
+      "Centre": "HARISH CHILD CLINIC - NHEL",
+      "CentreCode": "362",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16857,
+      "Centre": "SHRI MALLIKARJUN LAB, RIPPANAPETE",
+      "CentreCode": "363",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16858,
+      "Centre": "NANJAPPA LIFE CARE RATE",
+      "CentreCode": "NSSL-MRP",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16860,
+      "Centre": "NANJAPPA HOSPITALS RATE",
+      "CentreCode": "NHEL-MRP",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16861,
+      "Centre": "NANJAPPA HOSPITALS HUBALI RATE",
+      "CentreCode": "NHPL-MRP",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16862,
+      "Centre": "NEURO BHARAT HOSPITAL SHIMOGA",
+      "CentreCode": "141",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16864,
+      "Centre": "JAYA HOSPITAL DVG_CASH",
+      "CentreCode": "JHD",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16865,
+      "Centre": "Life Line Diagnostic, Davanagere",
+      "CentreCode": "351",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16867,
+      "Centre": "Mithra Diagnostic_Cash",
+      "CentreCode": "753",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16868,
+      "Centre": "NANDITHA DIAGNOSTIC CENTRE DAVANAGERE",
+      "CentreCode": "267",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16870,
+      "Centre": "Pramod Diagnostic, DVG_Cash",
+      "CentreCode": "458",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16871,
+      "Centre": "RENEW CLINICAL DVG",
+      "CentreCode": "284",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16873,
+      "Centre": "Sarathi Child Care_ DAVANAGERE",
+      "CentreCode": "288",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16874,
+      "Centre": "Sirsi Hi-Tech",
+      "CentreCode": "852",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16876,
+      "Centre": "SUCHETHANA HOSPITAL DAVANGERE",
+      "CentreCode": "281",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16881,
+      "Centre": "Vishwa Hi-Tech, DAVANAGERE",
+      "CentreCode": "323",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16886,
+      "Centre": "Anand Child Health Care DAVANAGERE",
+      "CentreCode": "278",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16887,
+      "Centre": "B Positive Laboratory",
+      "CentreCode": "106",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16888,
+      "Centre": "Gangashree Laboratory",
+      "CentreCode": "412",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16890,
+      "Centre": "ASHIRWAD DIAGNOSTIC CENTER THERIKERE",
+      "CentreCode": "238",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16891,
+      "Centre": "C.B. Clinical Lab",
+      "CentreCode": "108",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16892,
+      "Centre": "City Lab, Shikaripura",
+      "CentreCode": "207",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16894,
+      "Centre": "Danish Hi-Tech",
+      "CentreCode": "745",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16895,
+      "Centre": "Dhatri Clinical Lab",
+      "CentreCode": "232",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16896,
+      "Centre": "G.K. Mahesh",
+      "CentreCode": "321",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16897,
+      "Centre": "GANGA CLINICAL LABORATORY SHIVAMOGGA",
+      "CentreCode": "231",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16899,
+      "Centre": "Genesis Health Care",
+      "CentreCode": "115",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16900,
+      "Centre": "H.M. Hi-Tech ,Hirekerur",
+      "CentreCode": "742",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16901,
+      "Centre": "Harisha Laboratory, Sorab",
+      "CentreCode": "965",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16902,
+      "Centre": "Health Care Clinical Lab",
+      "CentreCode": "252",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16904,
+      "Centre": "Honnamma Hi-Tech",
+      "CentreCode": "119",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16905,
+      "Centre": "HP Hi-Tech, Thirthahalli",
+      "CentreCode": "959",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16906,
+      "Centre": "Jai Bharath Lab",
+      "CentreCode": "210",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16908,
+      "Centre": "Kiran Clinical Lab",
+      "CentreCode": "851",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16910,
+      "Centre": "K.R.S. Multispeciality Hospital",
+      "CentreCode": "512",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16912,
+      "Centre": "KMC Diagnostic Centre",
+      "CentreCode": "127",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16914,
+      "Centre": "LAKSHMI LABORATORY SHIVAMOGGA",
+      "CentreCode": "196",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16915,
+      "Centre": "Life Care Lab, Koppa",
+      "CentreCode": "400",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16916,
+      "Centre": "Life Care Lab, Nyamati",
+      "CentreCode": "500",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16917,
+      "Centre": "Life Care Lab, Anna Nagar",
+      "CentreCode": "311",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16919,
+      "Centre": "Malnad Clinical Lab, Thirthahalli",
+      "CentreCode": "254",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16920,
+      "Centre": "Malnad Lab, Anna Nagar",
+      "CentreCode": "344",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16921,
+      "Centre": "My Diagnostic Centre, Shimoga",
+      "CentreCode": "313",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16922,
+      "Centre": "R.V. Care",
+      "CentreCode": "661",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16924,
+      "Centre": "Sri Basaveshwar Clinical laboratory, Sasivehalli",
+      "CentreCode": "202",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16925,
+      "Centre": "Ravi Clinical Lab, Channagiri",
+      "CentreCode": "800",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16926,
+      "Centre": "S.S.L.R., Sorab",
+      "CentreCode": "801",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16927,
+      "Centre": "Sai Brindavana Hospital, Sagar",
+      "CentreCode": "342",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16928,
+      "Centre": "Samaya Diagnostic Centre, Shimoga",
+      "CentreCode": "221",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16930,
+      "Centre": "Sanjeevini Hospital, Tarikere",
+      "CentreCode": "153",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16932,
+      "Centre": "Shikaripura Hi-Tech",
+      "CentreCode": "158",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16933,
+      "Centre": "Shiva Diagnostic, Hosadurga",
+      "CentreCode": "160",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16935,
+      "Centre": "Shree Devi Diagnostic Center, Hosadurga",
+      "CentreCode": "163",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16937,
+      "Centre": "Shree Devi Clinical Lab, Honnali",
+      "CentreCode": "810",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16938,
+      "Centre": "Shree Devi Diagnostic Center, Hosadurga",
+      "CentreCode": "164",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16939,
+      "Centre": "Shree Diagnostic, Rangenahalli",
+      "CentreCode": "812",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16940,
+      "Centre": "Shree Jagannath Health Care, Shankaragatta",
+      "CentreCode": "258",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16941,
+      "Centre": "Sri Mallikarjun Lab, Rippanpete",
+      "CentreCode": "814",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16942,
+      "Centre": "Sri Maruthi Lab,",
+      "CentreCode": "345",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16943,
+      "Centre": "Sri Sai Lab, Anthargatte",
+      "CentreCode": "171",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16944,
+      "Centre": "Sri Sharadamurthy Clinical Lab, Honnali",
+      "CentreCode": "172",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16945,
+      "Centre": "T.R. Medi Health Care",
+      "CentreCode": "215",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16947,
+      "Centre": "Vaishnavi Lab, Shimoga",
+      "CentreCode": "178",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16948,
+      "Centre": "Vinay Diagnostic, Shimoga",
+      "CentreCode": "227",
+      "BarcodeLogic": 2,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16949,
+      "Centre": "PRO Shimoga Diagnostic",
+      "CentreCode": "352",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16952,
+      "Centre": "LIFE CARE LABORATORY-KUMSI",
+      "CentreCode": "346",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16953,
+      "Centre": "KRS Multispeciality Hospital Pvt. Ltd.,",
+      "CentreCode": "338",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16955,
+      "Centre": "VISHWAS DIAGNOSTIC DAVANGERE",
+      "CentreCode": "324",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16956,
+      "Centre": "PRAMOD DIAGNOSTIC DAVANGERE",
+      "CentreCode": "316",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16957,
+      "Centre": "JAYA HOSPITAL DAVANGERE",
+      "CentreCode": "279",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16958,
+      "Centre": "Shourya Health care center and Kanmani medical Kumbaluru",
+      "CentreCode": "285",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16959,
+      "Centre": "R V CARE DIAGONOSTIC HOSDURGA",
+      "CentreCode": "302",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16960,
+      "Centre": "GAANASHREE CLINICAL LABORATORY",
+      "CentreCode": "257",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16961,
+      "Centre": "HEGDE LABORATORY SAGARA",
+      "CentreCode": "222",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16962,
+      "Centre": "VISHWABHARATHI HI-TECH CLINICAL LABORATORY",
+      "CentreCode": "182",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16963,
+      "Centre": "SAFE HEALTH CARE SHIVAMOGGA",
+      "CentreCode": "148",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16967,
+      "Centre": "G K MAHESH DIABETIC CENTER.",
+      "CentreCode": "114",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16968,
+      "Centre": "SADHANA SPECIALITY CLINIC DAVANAGERE",
+      "CentreCode": "286",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16969,
+      "Centre": "Demo Panel",
+      "CentreCode": "007",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16970,
+      "Centre": "demo credit",
+      "CentreCode": "008",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16971,
+      "Centre": "SECURE HOSPITAL",
+      "CentreCode": "7022",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16972,
+      "Centre": "ESHWAR HEALTH CARE HOSPITAL. HONNALI",
+      "CentreCode": "8884",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16973,
+      "Centre": "APOORVA POLYCLINIC",
+      "CentreCode": "364",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16974,
+      "Centre": "SHIVAKRUPA CLINIC, DAVANAGERE",
+      "CentreCode": "365",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16975,
+      "Centre": "THUNGABHADRA LAB HONNALI",
+      "CentreCode": "290",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16976,
+      "Centre": "SK HITECH LAB-SHIMOGA",
+      "CentreCode": "167",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16977,
+      "Centre": "Referral Lab- External",
+      "CentreCode": "366",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16978,
+      "Centre": "SUN SPECIALITY HOSPITAL, SMG",
+      "CentreCode": "367",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16979,
+      "Centre": "DAVANAGERE EXTERNAL LAB",
+      "CentreCode": "368",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16980,
+      "Centre": "HOME COLLECTION",
+      "CentreCode": "HM001",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16982,
+      "Centre": "Dummy_test",
+      "CentreCode": "123123",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    },
+    {
+      "CentreID": 16984,
+      "Centre": "SRI MANJUNATHA HITECH DIAGNOSTIC CENTRE",
+      "CentreCode": "369",
+      "BarcodeLogic": 1,
+      "VisitType": "1",
+      "HideAmount": 0,
+      "SetMRP": 0,
+      "IsActive": 1
+    }
+  ],
+  "rateTypes": [
+    {
+      "ID": 184,
+      "RateTypeId": 163,
+      "RateTypeName": "AASTHA PATHOLOGY ISLAMPUR",
+      "Discount_Amount": "50.00",
+      "Discount_Percent": "0.00",
+      "dtEntry": "2020-07-02T21:24:17.000Z",
+      "dtUpdate": "2020-07-03T06:51:37.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 185,
+      "RateTypeId": 36,
+      "RateTypeName": "ABDA ZONE",
+      "Discount_Amount": "50.00",
+      "Discount_Percent": "0.00",
+      "dtEntry": "2020-07-02T21:24:37.000Z",
+      "dtUpdate": "2020-07-03T06:39:40.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 186,
+      "RateTypeId": 102,
+      "RateTypeName": "ANUBIKSHAN LAB.",
+      "Discount_Amount": "0.00",
+      "Discount_Percent": "100.00",
+      "dtEntry": "2020-07-02T21:27:52.000Z",
+      "dtUpdate": "2020-07-02T21:28:14.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 187,
+      "RateTypeId": 10,
+      "RateTypeName": "PALASH",
+      "Discount_Amount": "0.00",
+      "Discount_Percent": "50.00",
+      "dtEntry": "2020-07-02T22:02:25.000Z",
+      "dtUpdate": "2020-07-03T09:26:46.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 188,
+      "RateTypeId": 11,
+      "RateTypeName": "DUMKA",
+      "Discount_Amount": "0.00",
+      "Discount_Percent": "10.00",
+      "dtEntry": "2020-07-03T06:43:14.000Z",
+      "dtUpdate": "2020-07-03T07:42:01.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 189,
+      "RateTypeId": 29,
+      "RateTypeName": "MALIGRAM",
+      "Discount_Amount": "40.00",
+      "Discount_Percent": "0.00",
+      "dtEntry": "2020-07-03T06:52:21.000Z",
+      "dtUpdate": "2020-07-03T06:52:21.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 190,
+      "RateTypeId": 152,
+      "RateTypeName": "DOCTORS DIAGNOSTIC CENTRE",
+      "Discount_Amount": "100.00",
+      "Discount_Percent": "0.00",
+      "dtEntry": "2020-07-03T06:58:52.000Z",
+      "dtUpdate": "2020-07-03T06:58:52.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    },
+    {
+      "ID": 191,
+      "RateTypeId": 0,
+      "RateTypeName": null,
+      "Discount_Amount": "100.00",
+      "Discount_Percent": "0.00",
+      "dtEntry": "2020-07-03T06:59:29.000Z",
+      "dtUpdate": "2020-07-03T06:59:29.000Z",
+      "CompanyID": 1,
+      "AuthrizedPersonName": null,
+      "AuthrizedPersonDesingation": null,
+      "AuthrizedPersonMobile": null,
+      "AuthrizedPersonEmailID": null,
+      "SPOCName": null,
+      "SPOCDesingation": null,
+      "SPOCMobile": null,
+      "SPOCEmailID": null
+    }
+  ],
+  "doctors": [
+    {
+      "DoctorReferalID": 1,
+      "Title": "Dr.",
+      "Name": "Self",
+      "DoctorCode": "DOC/001",
+      "Mobile": "",
+      "Specialization": "Physiotherapy",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 2,
+      "Title": "Dr.",
+      "Name": "H R SHANKARAPPA",
+      "DoctorCode": "DOC/002",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 3,
+      "Title": "Dr.",
+      "Name": "VISHWANATH H N",
+      "DoctorCode": "DOC/003",
+      "Mobile": "9513398519",
+      "Specialization": "Paediatric Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 4,
+      "Title": "Dr.",
+      "Name": "LOKESH  B H",
+      "DoctorCode": "DOC/004",
+      "Mobile": "9343037589",
+      "Specialization": "Cardiology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 5,
+      "Title": "Dr.",
+      "Name": "NITHIN  M S",
+      "DoctorCode": "DOC/005",
+      "Mobile": "9482519775",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 6,
+      "Title": "Dr.",
+      "Name": "PRASHANTH D K",
+      "DoctorCode": "DOC/006",
+      "Mobile": "9449573622",
+      "Specialization": "Neurologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 7,
+      "Title": "Dr.",
+      "Name": "J  NARENDRA",
+      "DoctorCode": "DOC/007",
+      "Mobile": "9448135619",
+      "Specialization": "Cardiology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 8,
+      "Title": "Dr.",
+      "Name": "VEENA",
+      "DoctorCode": "DOC/008",
+      "Mobile": "9964211520",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 9,
+      "Title": "Dr.",
+      "Name": "HARISH K R",
+      "DoctorCode": "DOC/009",
+      "Mobile": "7736545759",
+      "Specialization": "Nephrology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 10,
+      "Title": "Dr.",
+      "Name": "ARJUN N R",
+      "DoctorCode": "DOC/0010",
+      "Mobile": "9866651381",
+      "Specialization": "Intensive Care",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 11,
+      "Title": "Dr.",
+      "Name": "VINCENT MC MOHAN",
+      "DoctorCode": "DOC/0011",
+      "Mobile": "9611280434",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 12,
+      "Title": "Dr.",
+      "Name": "HARISH H S",
+      "DoctorCode": "DOC/0012",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 13,
+      "Title": "Dr.",
+      "Name": "G N GOVINDA SWAMY",
+      "DoctorCode": "DOC/0013",
+      "Mobile": "7619467228",
+      "Specialization": "Radiology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 14,
+      "Title": "Dr.",
+      "Name": "AMITHASH",
+      "DoctorCode": "DOC/0014",
+      "Mobile": "",
+      "Specialization": "Pulmonologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 15,
+      "Title": "Dr.",
+      "Name": "ARJUN BHAGAVATH",
+      "DoctorCode": "DOC/0015",
+      "Mobile": "9901582562",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 16,
+      "Title": "Dr.",
+      "Name": "ANIL KALLESH",
+      "DoctorCode": "DOC/0016",
+      "Mobile": "8872724321",
+      "Specialization": "Paediatric Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 17,
+      "Title": "Dr.",
+      "Name": "DEEPAK H G",
+      "DoctorCode": "DOC/0017",
+      "Mobile": "",
+      "Specialization": "SPINE SURGERY",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 18,
+      "Title": "Dr.",
+      "Name": "KUSHAL",
+      "DoctorCode": "DOC/0018",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 19,
+      "Title": "Dr.",
+      "Name": "RAKESH  M L",
+      "DoctorCode": "DOC/0019",
+      "Mobile": "9611366049",
+      "Specialization": "Intensive Care",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 20,
+      "Title": "Dr.",
+      "Name": "SPOORTHI P PAI",
+      "DoctorCode": "DOC/0020",
+      "Mobile": "9900954540",
+      "Specialization": "Endocrinology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 21,
+      "Title": "Dr.",
+      "Name": "VANI KORI",
+      "DoctorCode": "DOC/0021",
+      "Mobile": "9845901110",
+      "Specialization": "Obstetrics & Gynaecology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 22,
+      "Title": "Dr.",
+      "Name": "UMESH KAMATH",
+      "DoctorCode": "DOC/0022",
+      "Mobile": "9844153461",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 23,
+      "Title": "Dr.",
+      "Name": "MADHUSHRI V D",
+      "DoctorCode": "DOC/0023",
+      "Mobile": "9916162081",
+      "Specialization": "Emergency Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 24,
+      "Title": "Dr.",
+      "Name": "VENKATESWARALU  M",
+      "DoctorCode": "DOC/0024",
+      "Mobile": "9629859146",
+      "Specialization": "Pathologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 25,
+      "Title": "Dr.",
+      "Name": "SACHIN  D N B",
+      "DoctorCode": "DOC/0025",
+      "Mobile": "9632469646",
+      "Specialization": "General Surgery",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 26,
+      "Title": "Dr.",
+      "Name": "AJAY G M",
+      "DoctorCode": "DOC/0026",
+      "Mobile": "7795101151",
+      "Specialization": "Intensive Care",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 27,
+      "Title": "Dr.",
+      "Name": "SHARMISHTA SUBHASH DHAVALIKAR",
+      "DoctorCode": "DOC/0027",
+      "Mobile": "",
+      "Specialization": "Dental",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 28,
+      "Title": "Dr.",
+      "Name": "SOWMYA B G",
+      "DoctorCode": "DOC/0028",
+      "Mobile": "",
+      "Specialization": "Fetal Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 29,
+      "Title": "Dr.",
+      "Name": "AKSHAY SHETTY",
+      "DoctorCode": "DOC/0029",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 30,
+      "Title": "Dr.",
+      "Name": "VIJAYARAGHAVAN  R L",
+      "DoctorCode": "DOC/0030",
+      "Mobile": "",
+      "Specialization": "Nuclear Medicine And Molecular Imaging",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 31,
+      "Title": "Dr.",
+      "Name": "HARSHAVARDHAN SHETTY",
+      "DoctorCode": "DOC/0031",
+      "Mobile": "",
+      "Specialization": "Plastic Surgery",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 32,
+      "Title": "Dr.",
+      "Name": "HOYSALAKUMAR D P",
+      "DoctorCode": "DOC/0032",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 33,
+      "Title": "Dr.",
+      "Name": "ANVITHA C",
+      "DoctorCode": "DOC/0033",
+      "Mobile": "",
+      "Specialization": "Dermatology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 34,
+      "Title": "Dr.",
+      "Name": "LAKSHMI P K",
+      "DoctorCode": "DOC/0034",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 35,
+      "Title": "Dr.",
+      "Name": "NAMRATHA UDUPA M S",
+      "DoctorCode": "DOC/0035",
+      "Mobile": "",
+      "Specialization": "Medical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 36,
+      "Title": "Dr.",
+      "Name": "NISCHAL  N",
+      "DoctorCode": "DOC/0036",
+      "Mobile": "",
+      "Specialization": "Surgical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 37,
+      "Title": "Dr.",
+      "Name": "RANJITHA  RAJ",
+      "DoctorCode": "DOC/0037",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 38,
+      "Title": "Dr.",
+      "Name": "NAVEEN P GOPAL",
+      "DoctorCode": "DOC/0038",
+      "Mobile": "",
+      "Specialization": "General Surgery",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 39,
+      "Title": "Dr.",
+      "Name": "RANJITHA  Y S",
+      "DoctorCode": "DOC/0039",
+      "Mobile": "",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 40,
+      "Title": "Dr.",
+      "Name": "GANESH MAAJI GOWDA",
+      "DoctorCode": "DOC/0040",
+      "Mobile": "",
+      "Specialization": "Neurologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 41,
+      "Title": "Dr.",
+      "Name": "SHANTHALA R",
+      "DoctorCode": "DOC/0041",
+      "Mobile": "",
+      "Specialization": "Obstetrics & Gynaecology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 42,
+      "Title": "Dr.",
+      "Name": "NISHITHA S H",
+      "DoctorCode": "DOC/0042",
+      "Mobile": "",
+      "Specialization": "Radiology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 43,
+      "Title": "Dr.",
+      "Name": "NIRANJAN G M",
+      "DoctorCode": "DOC/0043",
+      "Mobile": "",
+      "Specialization": "Medical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 44,
+      "Title": "Dr.",
+      "Name": "A M A SURESH KUMAR",
+      "DoctorCode": "DOC/0044",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 45,
+      "Title": "Dr.",
+      "Name": "AARTI MALAVADE",
+      "DoctorCode": "DOC/0045",
+      "Mobile": "",
+      "Specialization": "Fetal Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 46,
+      "Title": "Dr.",
+      "Name": "ABDUL HASEEB QUADRI",
+      "DoctorCode": "DOC/0046",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 47,
+      "Title": "Dr.",
+      "Name": "ABDUL WAJEED",
+      "DoctorCode": "DOC/0047",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 48,
+      "Title": "Dr.",
+      "Name": "ABHIJITH",
+      "DoctorCode": "DOC/0048",
+      "Mobile": "",
+      "Specialization": "Urologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 49,
+      "Title": "Dr.",
+      "Name": "ABHIJITH   S M",
+      "DoctorCode": "DOC/0049",
+      "Mobile": "",
+      "Specialization": "Urologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 50,
+      "Title": "Dr.",
+      "Name": "ABHIJITH ACHARYA",
+      "DoctorCode": "DOC/0050",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 51,
+      "Title": "Dr.",
+      "Name": "ABHIJITH SHETTY",
+      "DoctorCode": "DOC/0051",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 52,
+      "Title": "Dr.",
+      "Name": "ABHILASH",
+      "DoctorCode": "DOC/0052",
+      "Mobile": "",
+      "Specialization": "General Surgery",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 53,
+      "Title": "Dr.",
+      "Name": "ABHILASH G RAMESH",
+      "DoctorCode": "DOC/0053",
+      "Mobile": "",
+      "Specialization": "Urologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 54,
+      "Title": "Dr.",
+      "Name": "ABHILASH G.RAMESH",
+      "DoctorCode": "DOC/0054",
+      "Mobile": "",
+      "Specialization": "Urologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 55,
+      "Title": "Dr.",
+      "Name": "ABHIMANYU V K",
+      "DoctorCode": "DOC/0055",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 56,
+      "Title": "Dr.",
+      "Name": "ABHIRAM",
+      "DoctorCode": "DOC/0056",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 57,
+      "Title": "Dr.",
+      "Name": "ABHIRAM",
+      "DoctorCode": "DOC/0057",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 58,
+      "Title": "Dr.",
+      "Name": "ABHISHEK",
+      "DoctorCode": "DOC/0058",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 59,
+      "Title": "Dr.",
+      "Name": "ABHISHEK B N",
+      "DoctorCode": "DOC/0059",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 60,
+      "Title": "Dr.",
+      "Name": "ABHISHEK D",
+      "DoctorCode": "DOC/0060",
+      "Mobile": "",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 61,
+      "Title": "Dr.",
+      "Name": "ABHISHEK G U",
+      "DoctorCode": "DOC/0061",
+      "Mobile": "",
+      "Specialization": "Opthalmology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 62,
+      "Title": "Dr.",
+      "Name": "ABHISHEK M  B",
+      "DoctorCode": "DOC/0062",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 63,
+      "Title": "Dr.",
+      "Name": "ABHISHEK M S",
+      "DoctorCode": "DOC/0063",
+      "Mobile": "",
+      "Specialization": "Pulmonologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 64,
+      "Title": "Dr.",
+      "Name": "ABHISHEK NUCHIN",
+      "DoctorCode": "DOC/0064",
+      "Mobile": "",
+      "Specialization": "Pulmonologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 65,
+      "Title": "Dr.",
+      "Name": "ABHISHEK R G",
+      "DoctorCode": "DOC/0065",
+      "Mobile": "",
+      "Specialization": "Paediatric Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 66,
+      "Title": "Dr.",
+      "Name": "ABHISHEK S S",
+      "DoctorCode": "DOC/0066",
+      "Mobile": "",
+      "Specialization": "Surgical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 67,
+      "Title": "Dr.",
+      "Name": "ABHYUDAYA .S",
+      "DoctorCode": "DOC/0067",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 68,
+      "Title": "Dr.",
+      "Name": "ADARSH",
+      "DoctorCode": "DOC/0068",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 69,
+      "Title": "Dr.",
+      "Name": "ADARSH G",
+      "DoctorCode": "DOC/0069",
+      "Mobile": "",
+      "Specialization": "Thoracic Surgeon",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 70,
+      "Title": "Dr.",
+      "Name": "ADARSH L PAWAR",
+      "DoctorCode": "DOC/0070",
+      "Mobile": "",
+      "Specialization": "Dental",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 71,
+      "Title": "Dr.",
+      "Name": "ADARSHA U THUPPAD",
+      "DoctorCode": "DOC/0071",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 72,
+      "Title": "Dr.",
+      "Name": "ADHARSH V THUPPAD",
+      "DoctorCode": "DOC/0072",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 73,
+      "Title": "Dr.",
+      "Name": "ADHEEP B AMBERKAR",
+      "DoctorCode": "DOC/0073",
+      "Mobile": "",
+      "Specialization": "Pulmonologist",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 74,
+      "Title": "Dr.",
+      "Name": "ADITHYA",
+      "DoctorCode": "DOC/0074",
+      "Mobile": "",
+      "Specialization": "Medical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 75,
+      "Title": "Dr.",
+      "Name": "AFEEFA ERUM",
+      "DoctorCode": "DOC/0075",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 76,
+      "Title": "Dr.",
+      "Name": "AFROZ KHAN",
+      "DoctorCode": "DOC/0076",
+      "Mobile": "",
+      "Specialization": "General Surgery",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 77,
+      "Title": "Dr.",
+      "Name": "AFSAR PASHA",
+      "DoctorCode": "DOC/0077",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 78,
+      "Title": "Dr.",
+      "Name": "AFZAL",
+      "DoctorCode": "DOC/0078",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 79,
+      "Title": "Dr.",
+      "Name": "AFZAL U",
+      "DoctorCode": "DOC/0079",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 80,
+      "Title": "Dr.",
+      "Name": "AHAMAD BHASHA",
+      "DoctorCode": "DOC/0080",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 81,
+      "Title": "Dr.",
+      "Name": "AHMED BASHA",
+      "DoctorCode": "DOC/0081",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 82,
+      "Title": "Dr.",
+      "Name": "AISHWARYA",
+      "DoctorCode": "DOC/0082",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 83,
+      "Title": "Dr.",
+      "Name": "AJAY",
+      "DoctorCode": "DOC/0083",
+      "Mobile": "",
+      "Specialization": "Obstetrics & Gynaecology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 84,
+      "Title": "Dr.",
+      "Name": "AJAY",
+      "DoctorCode": "DOC/0084",
+      "Mobile": "",
+      "Specialization": "Surgical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 85,
+      "Title": "Dr.",
+      "Name": "AJAY C",
+      "DoctorCode": "DOC/0085",
+      "Mobile": "",
+      "Specialization": "Surgical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 86,
+      "Title": "Dr.",
+      "Name": "AJAY DM",
+      "DoctorCode": "DOC/0086",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 87,
+      "Title": "Dr.",
+      "Name": "AJAY GOWDA",
+      "DoctorCode": "DOC/0087",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 88,
+      "Title": "Dr.",
+      "Name": "AJAY HEGDE",
+      "DoctorCode": "DOC/0088",
+      "Mobile": "",
+      "Specialization": "Neurology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 89,
+      "Title": "Dr.",
+      "Name": "AJITH",
+      "DoctorCode": "DOC/0089",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 90,
+      "Title": "Dr.",
+      "Name": "AJITH K PRABHU",
+      "DoctorCode": "DOC/0090",
+      "Mobile": "",
+      "Specialization": "Paediatric Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 91,
+      "Title": "Dr.",
+      "Name": "AJITH KUMAR M",
+      "DoctorCode": "DOC/0091",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 92,
+      "Title": "Dr.",
+      "Name": "AJITH KUMAR SHETTY",
+      "DoctorCode": "DOC/0092",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 93,
+      "Title": "Dr.",
+      "Name": "AKASH",
+      "DoctorCode": "DOC/0093",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 94,
+      "Title": "Dr.",
+      "Name": "AKASH ANDAGI",
+      "DoctorCode": "DOC/0094",
+      "Mobile": "",
+      "Specialization": "Surgical Oncology",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 95,
+      "Title": "Dr.",
+      "Name": "AKASH ARADHYA",
+      "DoctorCode": "DOC/0095",
+      "Mobile": "",
+      "Specialization": "E.N.T.",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 96,
+      "Title": "Dr.",
+      "Name": "AKASH G H",
+      "DoctorCode": "DOC/0096",
+      "Mobile": "",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 97,
+      "Title": "Dr.",
+      "Name": "AKASH HOSTHOTA",
+      "DoctorCode": "DOC/0097",
+      "Mobile": "",
+      "Specialization": "Orthopaedics",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 98,
+      "Title": "Dr.",
+      "Name": "AKASH J S",
+      "DoctorCode": "DOC/0098",
+      "Mobile": "",
+      "Specialization": "Anesthesiast",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 99,
+      "Title": "Dr.",
+      "Name": "AKASH VIRUPAXI BHAGOJI",
+      "DoctorCode": "DOC/0099",
+      "Mobile": "",
+      "Specialization": "General Medicine",
+      "IsActive": 1
+    },
+    {
+      "DoctorReferalID": 100,
+      "Title": "Dr.",
+      "Name": "AKASHATHA",
+      "DoctorCode": "DOC/0100",
+      "Mobile": "",
+      "Specialization": "Gastroenterology",
+      "IsActive": 1
+    }
+  ]
+}

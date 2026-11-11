@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: labrox-iam-service
+  profiles:
+    default: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/labrox_lims?currentSchema=iam_schema
+    username: labrox_admin
+    password: LabRoxSecurePassword2026!
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+  flyway:
+    enabled: true
+    schemas: iam_schema
+    baseline-on-migrate: true
+
+labrox:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    access-token-expiration-ms: 900000       # 15 minutes
+    refresh-token-expiration-ms: 604800000   # 7 days
