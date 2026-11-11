@@ -20,7 +20,7 @@
 
         <!-- Spring Ecosystem (Latest Stable / LTS) -->
         <spring-boot.version>3.3.4</spring-boot.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <spring-cloud.version>2025.1.4</spring-cloud.version>
 
         <!-- Data & Messaging -->
         <postgresql.version>42.7.4</postgresql.version>
