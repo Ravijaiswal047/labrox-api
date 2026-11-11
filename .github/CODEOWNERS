@@ -1,0 +1,21 @@
+# Global Code Owners
+* @Ravijaiswal047
+
+# Microservices Ownership
+/labrox-common/                @Ravijaiswal047
+/labrox-gateway-service/       @Ravijaiswal047
+/labrox-iam-service/           @Ravijaiswal047
+/labrox-order-service/         @Ravijaiswal047
+/labrox-sample-service/        @Ravijaiswal047
+/labrox-diagnostic-service/    @Ravijaiswal047
+/labrox-qc-service/            @Ravijaiswal047
+/labrox-approval-service/      @Ravijaiswal047
+/labrox-reporting-service/     @Ravijaiswal047
+/labrox-cron-orchestrator/     @Ravijaiswal047
+/labrox-test-catalog-service/  @Ravijaiswal047
+
+# Infrastructure & CI/CD
+/.github/                      @Ravijaiswal047
+/infra/                        @Ravijaiswal047
+/scripts/                      @Ravijaiswal047
+/docs/                         @Ravijaiswal047

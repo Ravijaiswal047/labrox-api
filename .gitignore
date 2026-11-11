@@ -1,0 +1,66 @@
+# Compiled class files
+target/
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle & Build tools
+.gradle/
+build/
+out/
+
+# Log files
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+# Environment and Secrets (21 CFR Part 11 Compliance)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+secrets/
+
+# IDE and Editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+!.vscode/settings.json
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker & Container runtime
+.docker/
+
+# Local databases, persistent volumes & temporary files
+data/
+volumes/
+tmp/
+*.swp
+*~
